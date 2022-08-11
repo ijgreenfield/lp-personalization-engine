@@ -20,7 +20,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         const files = await glob(`${globPrefix}builder/*::${encodeURIComponent(url)}.html`);
         const paths = files.map((file) => `/${file.replace('.html', '').replace(globPrefix, '')}`);
         await Promise.all(paths.map(path => res.revalidate(path)));
-        return res.send({ revalidated: true, total: files.length, paths})
+        return res.send({ revalidated: true, total: files.length, paths, globPrefix})
     }
     res.send({ ok: true})
 }
