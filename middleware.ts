@@ -36,8 +36,6 @@ export default function middleware(request: NextRequest) {
       },
       attributes: {
         ...getUserAttributes({ ...allCookies, ...query }),
-        domain: request.headers.get('Host') || '',
-        country: request.geo?.country || '',
         city: request.geo?.city || '',
         queryParam: query.shop || "",
       }
