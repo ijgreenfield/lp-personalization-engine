@@ -16,7 +16,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     const url = value?.data?.url || String(req.query.url);
     // todo: secret
     if (url) {
-        const globPrefix = `${__dirname}/../`
+        const globPrefix = `${process.cwd()}/.next/server/pages/`
         const files = await glob(`${globPrefix}builder/*::${encodeURIComponent(url)}.html`);
         const paths = files.map((file) => `/${file.replace('.html', '').replace(globPrefix, '')}`);
         await Promise.all(paths.map(path => res.revalidate(path)));
