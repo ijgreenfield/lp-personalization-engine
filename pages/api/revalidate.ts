@@ -24,7 +24,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         // lets lest files in pages
         const rawdata = await fs.readFileSync(`${process.cwd()}/.next/server/pages-manifest.json`)
         const allpages = await glob(`${process.cwd()}/.next/server/**/*`, { onlyFiles: true });
-        return res.send({ revalidated: true, total: files.length, paths, globPrefix, allpages, mainfest: JSON.parse(rawdata)})
+        return res.send({ revalidated: true, total: files.length, paths, globPrefix, allpages, mainfest: JSON.parse(rawdata as any)})
     }
     res.send({ ok: true})
 }
