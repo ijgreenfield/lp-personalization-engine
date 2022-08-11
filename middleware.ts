@@ -40,7 +40,8 @@ export default function middleware(request: NextRequest) {
         country: request.geo?.country || '',
       }
     })
-    url.pathname = personlizedURL.rewritePath();
+    // prefixing with original path for easier revalidation
+    url.pathname = `${personlizedURL.rewritePath()}::${encodeURIComponent(usePath)}`;
     return NextResponse.rewrite(url)  
   }
   return NextResponse.next();

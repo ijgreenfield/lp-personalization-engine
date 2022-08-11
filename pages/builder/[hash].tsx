@@ -17,7 +17,8 @@ import '@builder.io/widgets/dist/lib/builder-widgets-async'
 builder.init(builderConfig.apiKey)
 
 export async function getStaticProps({ params } : GetStaticPropsContext<{ hash: string }>) {
-  const personlizedURL = PersonalizedURL.fromRewrite(params!.hash!);
+  // hash structure is ${originalURL}::${hash}, splitting here, this would make revalidation possible
+  const personlizedURL = PersonalizedURL.fromRewrite(params!.hash!.split('::')[0]);
   const attributes = personlizedURL.options.attributes;
   const page =
     (await builder
@@ -34,10 +35,6 @@ export async function getStaticProps({ params } : GetStaticPropsContext<{ hash: 
       attributes: attributes,
       locale: attributes.locale || 'en-US'
     },
-    // Next.js will attempt to re-generate the page:
-    // - When a request comes in
-    // - At most once every 1 seconds
-    revalidate: 1
   }
 }
 
