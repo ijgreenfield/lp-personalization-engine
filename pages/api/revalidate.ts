@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import glob from 'fast-glob'
+import fs from 'fs'
 interface HookData {
     operation: 'delete' | 'publish' | 'unpublish' | 'archive';
     modelName: string;
@@ -21,8 +22,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         const paths = files.map((file) => `/${file.replace('.html', '').replace(globPrefix, '')}`);
         await Promise.all(paths.map(path => res.revalidate(path)));
         // lets lest files in pages
-        const allpages = await glob(`${globPrefix}/**/*`);
-        return res.send({ revalidated: true, total: files.length, paths, globPrefix, allpages})
+        const rawdata = await fs.readFileSync(`${process.cwd()}/.next/server/pages-manifest.json`)
+        const allpages = await glob(`${process.cwd()}/.next/server/**/*`, { onlyFiles: true });
+        return res.send({ revalidated: true, total: files.length, paths, globPrefix, allpages, mainfest: JSON.parse(rawdata)})
     }
     res.send({ ok: true})
 }
