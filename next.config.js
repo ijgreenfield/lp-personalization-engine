@@ -3,6 +3,10 @@ module.exports = {
   images: {
     domains: ['cdn.builder.io'],
   },
+  experimental: {
+    // Defaults to 50MB
+    isrMemoryCacheSize: 0,
+  },
   async headers() {
     return [
       {
