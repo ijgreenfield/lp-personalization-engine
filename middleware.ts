@@ -37,7 +37,7 @@ export default function middleware(request: NextRequest) {
       attributes: {
         ...getUserAttributes({ ...allCookies, ...query }),
         city: request.geo?.city || '',
-        queryParam: query.shop || "",
+        queryParam: query.shop || '',
       }
       
     })
