@@ -6,6 +6,8 @@ import {
 
 const regex = /^(.+\.)/
 
+//empty
+
 const shouldRewrite = (pathname: string) => {
   // only in netlify needed
   if (pathname.startsWith('/builder')) {
