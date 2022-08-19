@@ -4,6 +4,7 @@ import builderConfig from '../config/builder'
 import '../assets/index.css'
 import { Builder, BuilderComponent } from '@builder.io/react'
 import { ChakraProvider } from '@chakra-ui/react'
+import Fonts from '@assets/styles/Fonts'
 import VideoHero from '../components/Hero'
 import theme from '../assets/styles/theme'
 import Footer from '@components/Footer'
@@ -12,11 +13,13 @@ import FAQ from '@components/FAQ'
 import CTASection from '@components/CtaSection'
 import SoloHero from '@components/SoloHero'
 
+
 builder.init(builderConfig.apiKey)
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
+      <Fonts />
       <Component {...pageProps} />
     </ChakraProvider>
   )
