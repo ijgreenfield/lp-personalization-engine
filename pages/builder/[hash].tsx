@@ -14,6 +14,7 @@ import { PersonalizedURL } from '@builder.io/personalization-utils'
 import { useEffect } from 'react'
 import '@builder.io/widgets/dist/lib/builder-widgets-async'
 import Header from '@components/Header'
+import ThreeColumn from '@components/ThreeColumn'
 
 builder.init(builderConfig.apiKey)
 
@@ -84,14 +85,12 @@ export default function Path({ page, attributes, locale }: InferGetStaticPropsTy
       />
       {(isPreviewingInBuilder || page) ? (
         <>
-        <Header />
         <BuilderComponent
           context={{ attributes }}
           data={{ attributes, locale }}
           model="page"
           content={page}
         />
-        
       </>
       ) : (
         <DefaultErrorPage statusCode={404} />

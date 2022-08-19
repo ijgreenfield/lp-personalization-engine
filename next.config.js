@@ -1,7 +1,8 @@
 
 module.exports = {
   images: {
-    domains: ['cdn.builder.io', 'cdn.shopify.com'],
+    domains: ['cdn.shopify.com'],
+    formats: ['image/avif', 'image/webp'],
   },
   experimental: {
     // Defaults to 50MB
