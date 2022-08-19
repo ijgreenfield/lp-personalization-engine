@@ -6,7 +6,7 @@ export default function FAQ(props) {
             <Container maxW='container.md'>
                 <Box py='48px'>
                     <Box mb='64px'>
-                        <Heading as='h1' textAlign='center'>Questions? We have answers.</Heading>
+                        <Heading as='h1' textAlign='center' fontWeight={500}>Questions? We have answers.</Heading>
                     </Box>
                     <Box>
                         <Accordion allowToggle allowMultiple>
