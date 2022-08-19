@@ -2,7 +2,8 @@ import { extendTheme } from "@chakra-ui/react"
 
 const theme = extendTheme({
     fonts: {
-        heading: 'Tobias'
+        heading: 'Tobias',
+        body: 'Cadiz'
     },
 
     components: {
