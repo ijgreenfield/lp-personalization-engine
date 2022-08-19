@@ -8,10 +8,10 @@ export default function ThreeColumn(props) {
             <Container maxWidth="1280px">
                 <Stack py="48px" spacing="">
                     <Stack spacing='16px'>
-                        <Heading textAlign="center" maxW='60%' mx="auto" fontWeight={500}>Lorem ipsum dolor sit amet, consectetur adipiscing elit</Heading>
+                        <Heading textAlign="center" maxW={['100%', '60%']} mx="auto" fontWeight={500}>Lorem ipsum dolor sit amet, consectetur adipiscing elit</Heading>
                         <Text textAlign="center" fontSize='18px'>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor.</Text>
                     </Stack>
-                    <SimpleGrid columns={3} spacing={10} mt='64px'>
+                    <SimpleGrid columns={[1,3]} spacing={10} mt='64px'>
                         <Box>
                             <Image 
                                 src="https://cdn.shopify.com/s/files/1/1704/8471/files/lp-image.webp?v=1659394060"

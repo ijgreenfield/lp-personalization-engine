@@ -6,8 +6,8 @@ export default function Footer(props) {
     return (
         <Box>
             <Container maxW='1280px'>
-                <Flex py='32px' fontSize='14px' fontWeight={600}>
-                    <Box>
+                <Flex py='32px' fontSize='14px' fontWeight={600} flexDirection={['column', 'row']} textAlign={['center', 'start']}>
+                    <Box mb={['12px', '0']}>
                         <Text>©2022 Heyday Wellness LLC.</Text>
                     </Box>
                     <Spacer />
