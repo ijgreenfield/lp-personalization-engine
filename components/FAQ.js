@@ -24,7 +24,7 @@ export default function FAQ(props) {
                             </AccordionItem>
                             <AccordionItem>
                                 <AccordionButton>
-                                    <Box flex='1' textAlign='left'>How are you different from other facial shops?</Box>
+                                    <Box flex='1' textAlign='left' fontWeight={600}>How are you different from other facial shops?</Box>
                                     <AccordionIcon />
                                 </AccordionButton>
                                 <AccordionPanel pb={4}>
@@ -36,7 +36,7 @@ export default function FAQ(props) {
                             </AccordionItem>
                             <AccordionItem>
                                 <AccordionButton>
-                                    <Box flex='1' textAlign='left'>How are you different from other facial shops?</Box>
+                                    <Box flex='1' textAlign='left' fontWeight={600}>How are you different from other facial shops?</Box>
                                     <AccordionIcon />
                                 </AccordionButton>
                                 <AccordionPanel pb={4}>
@@ -48,7 +48,7 @@ export default function FAQ(props) {
                             </AccordionItem>
                             <AccordionItem>
                                 <AccordionButton>
-                                    <Box flex='1' textAlign='left'>How are you different from other facial shops?</Box>
+                                    <Box flex='1' textAlign='left' fontWeight={600}>How are you different from other facial shops?</Box>
                                     <AccordionIcon />
                                 </AccordionButton>
                                 <AccordionPanel pb={4}>
@@ -60,7 +60,7 @@ export default function FAQ(props) {
                             </AccordionItem>
                             <AccordionItem>
                                 <AccordionButton>
-                                    <Box flex='1' textAlign='left'>How are you different from other facial shops?</Box>
+                                    <Box flex='1' textAlign='left' fontWeight={600}>How are you different from other facial shops?</Box>
                                     <AccordionIcon />
                                 </AccordionButton>
                                 <AccordionPanel pb={4}>
@@ -72,7 +72,7 @@ export default function FAQ(props) {
                             </AccordionItem>
                             <AccordionItem>
                                 <AccordionButton>
-                                    <Box flex='1' textAlign='left'>How are you different from other facial shops?</Box>
+                                    <Box flex='1' textAlign='left' fontWeight={600}>How are you different from other facial shops?</Box>
                                     <AccordionIcon />
                                 </AccordionButton>
                                 <AccordionPanel pb={4}>

@@ -10,6 +10,7 @@ import Footer from '@components/Footer'
 import ThreeColumn from '@components/ThreeColumn'
 import FAQ from '@components/FAQ'
 import CTASection from '@components/CtaSection'
+import SoloHero from '@components/SoloHero'
 
 builder.init(builderConfig.apiKey)
 
@@ -40,4 +41,8 @@ Builder.registerComponent(CTASection, {
 
 Builder.registerComponent(FAQ, { 
   name: 'FAQ Section',
+})
+
+Builder.registerComponent(SoloHero, { 
+  name: 'Solo Hero',
 })
