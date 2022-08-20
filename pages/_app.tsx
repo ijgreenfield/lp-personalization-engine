@@ -5,13 +5,13 @@ import '../assets/index.css'
 import { Builder, BuilderComponent } from '@builder.io/react'
 import { ChakraProvider } from '@chakra-ui/react'
 import Fonts from '@assets/styles/Fonts'
-import VideoHero from '../components/Hero'
 import theme from '../assets/styles/theme'
 import Footer from '@components/Footer'
 import ThreeColumn from '@components/ThreeColumn'
 import FAQ from '@components/FAQ'
 import CTASection from '@components/CtaSection'
 import SoloHero from '@components/SoloHero'
+import VideoHero from '@components/VideoHero'
 
 
 builder.init(builderConfig.apiKey)
@@ -48,4 +48,8 @@ Builder.registerComponent(FAQ, {
 
 Builder.registerComponent(SoloHero, { 
   name: 'Solo Hero',
+})
+
+Builder.registerComponent(VideoHero, {
+  name: 'Video Hero',
 })
