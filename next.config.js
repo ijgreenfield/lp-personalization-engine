@@ -1,13 +1,9 @@
+const nextConfig = {
+  reactStrictMode: true,
+}
 
 module.exports = {
-  images: {
-    domains: ['cdn.shopify.com'],
-    formats: ['image/avif', 'image/webp'],
-  },
-  experimental: {
-    // Defaults to 50MB
-    isrMemoryCacheSize: 0,
-  },
+
   async headers() {
     return [
       {
@@ -25,5 +21,9 @@ module.exports = {
   env: {
     // expose env to the browser
     BUILDER_PUBLIC_KEY: process.env.BUILDER_PUBLIC_KEY,
+  },
+
+  images: {
+    domains: ['cdn.shopify.com', 'images.unsplash.com'],
   },
 }

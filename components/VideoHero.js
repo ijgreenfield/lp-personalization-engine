@@ -26,7 +26,7 @@ export default function VideoHero(props) {
                 <Box bg="rgb(0,0,0,.5)" pos="absolute" top="0" left="0" zIndex={2} w="100%" h="100%"></Box>
                 <Box zIndex={1}>
                     <AspectRatio ratio={16 / 9} minH={["80vh","auto"]}>
-                        <video muted autoplay="autoplay" loop width="100%" height="100%">
+                        <video muted autoPlay loop width="100%" height="100%">
                             <source src="https://cdn.shopify.com/videos/c/o/v/328ec4937774489088ea9fc2eef95cfc.mp4"/>
                         </video>
                     </AspectRatio>
