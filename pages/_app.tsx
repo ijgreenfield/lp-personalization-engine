@@ -13,6 +13,7 @@ import CTASection from '@components/CtaSection'
 import SoloHero from '@components/SoloHero'
 import VideoHero from '@components/VideoHero'
 import LogoCloud from '@components/LogoCloud'
+import Header from '@components/Header'
 
 
 builder.init(builderConfig.apiKey)
@@ -57,4 +58,8 @@ Builder.registerComponent(VideoHero, {
 
 Builder.registerComponent(LogoCloud, {
   name: 'Logo Cloud',
+})
+
+Builder.registerComponent(Header, {
+  name: 'Header w/ Button',
 })
