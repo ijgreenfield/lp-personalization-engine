@@ -50,6 +50,10 @@ Builder.registerComponent(FAQ, {
 
 Builder.registerComponent(SoloHero, { 
   name: 'Solo Hero',
+  inputs: [
+    { name: 'form', type: 'boolean'},
+    { name: 'logos', type: 'boolean'}
+  ]
 })
 
 Builder.registerComponent(VideoHero, {
