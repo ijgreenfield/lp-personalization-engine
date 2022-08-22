@@ -1,23 +1,48 @@
-import { Box, Container, Flex, Heading, Link } from "@chakra-ui/react"
-import Image from "next/image"
+import { Box, Container, Flex, Text, Image, Link } from "@chakra-ui/react"
 
 export default function LogoCloud(props) {
     return (
-        <Box py="48px">
+        <Box py="48px" textAlign="center">
             <Container>
                 <Box>
-                    <Heading></Heading>
-                    <Flex>
-                        <Box w="100%" maxW="33%">
-                            <Link >
+                    <Text my="8px" textTransform="uppercase" fontWeight="600" fontSize="xl">As Seen In</Text>
+                    <Flex justify="center" wrap="wrap" maxW="590px" mx="auto">
+                        <Flex w="100%" maxW="33%" my="1em" pos="relative">
+                            <Link pos="relative" w="100%" h="100%">
                                 <Image 
-                                    src='https://images.unsplash.com/photo-1657299143474-c456e8388ee2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=802&q=80'
-                                    alt="image"
-                                    layout="fill"
-                                    objectFit="contain"
+                                    src="https://cdn.shopify.com/s/files/1/1704/8471/files/vogue-logo-bg.webp?v=1661175640"
+                                    objectFit='cover'
                                 />
                             </Link>
-                        </Box>
+                        </Flex>
+                        <Flex w="100%" maxW="33%" my="1em">
+                            <Link pos="relative" w="100%" h="100%">
+                                <Image 
+                                    src="https://cdn.shopify.com/s/files/1/1704/8471/files/fast-company-logo-bg.webp?v=1661175800"
+                                />
+                            </Link>
+                        </Flex>
+                        <Flex w="100%" maxW="33%" my="1em">
+                            <Link pos="relative" w="100%" h="100%">
+                                <Image 
+                                    src="https://cdn.shopify.com/s/files/1/1704/8471/files/GLAMOUR-LOGO_320x_553d90bd-c79e-4261-8774-a4a8924dcdee.webp?v=1661176774"
+                                />
+                            </Link>
+                        </Flex>
+                        <Flex w="100%" maxW="33%" my="1em">
+                            <Link pos="relative" w="100%" h="100%">
+                                <Image 
+                                    src="https://cdn.shopify.com/s/files/1/1704/8471/files/WIRECUTTER-LOGO_320x_78236170-197a-4091-bbe2-65d247440820.webp?v=1661176917"
+                                />
+                            </Link>
+                        </Flex>
+                        <Flex w="100%" maxW="33%" my="1em">
+                            <Link pos="relative" w="100%" h="100%">
+                                <Image 
+                                    src="https://cdn.shopify.com/s/files/1/1704/8471/files/HYPEBAE-LOGO_320x_1ff0a6f6-84c5-47ea-917a-ae0e2067df10.webp?v=1661177106"
+                                />
+                            </Link>
+                        </Flex>
                     </Flex>
                 </Box>
             </Container>
