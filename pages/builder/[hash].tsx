@@ -55,9 +55,9 @@ export default function Path({ page, attributes, locale }: InferGetStaticPropsTy
     builder.setUserAttributes(attributes)
   }, [])
 
-  //if (router.isFallback) {
-   // return <h1>Loading...</h1>
-  //}
+  if (router.isFallback) {
+    return <h1>Loading...</h1>
+  }
 
   const { title, description, image } = page?.data || {}
   return (
