@@ -2,7 +2,11 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = {
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+
+module.exports = withBundleAnalyzer({
 
   async headers() {
     return [
@@ -26,4 +30,4 @@ module.exports = {
   images: {
     domains: ['cdn.shopify.com', 'images.unsplash.com', 'localhost'],
   },
-}
+})
