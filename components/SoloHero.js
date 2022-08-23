@@ -1,4 +1,5 @@
-import { Box, Container, Heading, Text, Input, Flex, FormControl, Image, Stack, InputRightElement, InputGroup } from "@chakra-ui/react";
+import { Box, Container, Heading, Text, Input, Flex, FormControl, Stack, InputRightElement, InputGroup } from "@chakra-ui/react";
+import Image from "next/image";
 
 export default function SoloHero(props) {
     const showForm = props.form;
@@ -62,19 +63,19 @@ export default function SoloHero(props) {
                             <Text textTransform="uppercase" fontWeight={600}>As Seen In</Text>
                             <Flex gap={8} marginTop="16px">
                                 <Image 
-                                    w={["60px","100px"]}
-                                    h={["30px","40px"]}
+                                    width={60}
+                                    height={30}
                                     src="https://cdn.shopify.com/s/files/1/1704/8471/files/vogue-logo.png?v=1660943915"
                                 />
                                 <Image 
-                                    w={["60px","100px"]}
-                                    h={["30px","40px"]}
-                                    src="https://cdn.shopify.com/s/files/1/1704/8471/files/goop-logo.png?v=1660943915"
+                                    width={60}
+                                    height={30}
+                                    src="https://cdn.shopify.com/s/files/1/1704/8471/files/vogue-logo.png?v=1660943915"
                                 />
                                 <Image 
-                                    w={["60px","100px"]}
-                                    h={["30px","40px"]}
-                                    src="https://cdn.shopify.com/s/files/1/1704/8471/files/elle-logo.png?v=1660943916"
+                                    width={60}
+                                    height={30}
+                                    src="https://cdn.shopify.com/s/files/1/1704/8471/files/vogue-logo.png?v=1660943915"
                                 />
                             </Flex>
                         </Box>
