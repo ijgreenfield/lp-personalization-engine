@@ -1,6 +1,5 @@
 import { Box, Heading, Container, Stack, Text, SimpleGrid } from "@chakra-ui/react";
 import Head from "next/head";
-import { Image } from "@chakra-ui/react";
 import Image from "next/image";
 
 export default function ThreeColumn(props) {
