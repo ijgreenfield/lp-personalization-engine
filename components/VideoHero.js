@@ -6,7 +6,7 @@ export default function VideoHero(props) {
             <Box pos="relative">
                 <Flex pos="absolute" top="0" right="0" left="0" bottom="0" zIndex={5} m="auto" h="max-content" w="80%" justify="space-between" alignItems="center">
                     <Stack maxW={["100%","50%"]} textAlign={["center", "left"]} spacing="24px">
-                        <Heading color="#fff" as="h1" size="2xl" lineHeight="125%">Your Exclusive Offer</Heading>
+                        <Heading color="#fff" as="h1" size="2xl" lineHeight="125%">Your Exclusive Offers</Heading>
                         <Text color="#fff">Heyday® is more than a facial. It’s a journey of self-discovery – measured in lorem, championed by the community, and fueled by the desire to lorem ipsum dolor blah. BOOK NOW & GET YOUR FIRST FACIAL HALF OFF at participating locations.</Text>
                         <Button display={["inline-block", "none"]} mx="auto !important">Book Your Facial</Button>
                     </Stack>
