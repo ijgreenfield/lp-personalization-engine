@@ -5,23 +5,25 @@ export default function VideoHero(props) {
         <Box>
             <Box pos="relative">
                 <Flex pos="absolute" top="0" right="0" left="0" bottom="0" zIndex={5} m="auto" h="max-content" w="80%" justify="space-between" alignItems="center">
-                    <Box>
-                        <Heading color="#fff" as="h1" size="3xl" mb="24px">Your Exclusive Offer</Heading>
-                        <Text color="#fff">CycleBar® is more than a ride. It’s a journey of self-discovery – measured in sweat, championed by the community, and fueled by the desire to get more out of life. BOOK NOW & GET YOUR FIRST RIDE FREE at participating studios.</Text>
-                    </Box>
-                    <Box maxW="460px" minW="460px" bg="#fff" p="30px" borderRadius="8px" alignItems="center" textAlign="center" display={['none', 'block']}>
+                    <Stack maxW={["100%","50%"]} textAlign={["center", "left"]} spacing="24px">
+                        <Heading color="#fff" as="h1" size="2xl" lineHeight="125%">Your Exclusive Offer</Heading>
+                        <Text color="#fff">Heyday® is more than a facial. It’s a journey of self-discovery – measured in lorem, championed by the community, and fueled by the desire to lorem ipsum dolor blah. BOOK NOW & GET YOUR FIRST FACIAL HALF OFF at participating locations.</Text>
+                        <Button display={["inline-block", "none"]} mx="auto !important">Book Your Facial</Button>
+                    </Stack>
+                    <Stack maxW="460px" minW="460px" bg="#fff" p="30px" borderRadius="8px" alignItems="center" textAlign="center" display={['none', 'block']} spacing="16px">
                         <Box>
                             <Heading as="h3" size="lg">50% Off Your First Facial</Heading>
                         </Box>
-                        <Stack spacing="12px" alignItems="center">
+                        <Stack spacing="16px" alignItems="center">
                             <Input placeholder="First Name*" size="lg"/>
                             <Input placeholder="Last Name*" size="lg"/>
                             <Input placeholder="Email*" size="lg"/>
                             <Input placeholder="Phone" size="lg"/>
                             <Input placeholder="Zip Code" size="lg"/>
+                            <Text fontSize="12px" textAlign="left">I agree to receive marketing text messages from Heyday Skincare at the number provided. Consent is not a condition of any purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel. View our Privacy Policy & Terms of Use.</Text>
                             <Button variant="primary" mx="auto">Book Your Facial</Button>
                         </Stack>
-                    </Box>
+                    </Stack>
                 </Flex>
                 <Box bg="rgb(0,0,0,.5)" pos="absolute" top="0" left="0" zIndex={2} w="100%" h="100%"></Box>
                 <Box zIndex={1}>

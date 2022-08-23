@@ -14,6 +14,7 @@ import SoloHero from '@components/SoloHero'
 import VideoHero from '@components/VideoHero'
 import LogoCloud from '@components/LogoCloud'
 import Header from '@components/Header'
+import HeaderTransparent from '@components/HeaderTransparent'
 
 
 builder.init(builderConfig.apiKey)
@@ -66,4 +67,8 @@ Builder.registerComponent(LogoCloud, {
 
 Builder.registerComponent(Header, {
   name: 'Header w/ Button',
+})
+
+Builder.registerComponent(HeaderTransparent, {
+  name: 'Transparent Header',
 })
