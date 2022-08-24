@@ -3,9 +3,9 @@ import { Center, Container, Heading, Box, Button, Stack, Text } from "@chakra-ui
 
 export default function CTASection(props) {
     return (
-        <Box bg='#EFEFEF'>
+        <Box bg={props.bgColor}>
             <Container>
-                <Center py='120px'>
+                <Center py={['80px', null, '104px']}>
                     <Stack textAlign='center' spacing='32px'>
                         <Heading fontWeight={500}>Questions? We have answers.</Heading>
                         <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor montalban bingo bango. </Text>

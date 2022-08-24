@@ -36,6 +36,13 @@ Builder.registerComponent(VideoHero, {
 
 Builder.registerComponent(ThreeColumn, { 
   name: 'Three Column Layout',
+  inputs: [
+    { name: 'Heading', type: 'string'},
+    { name: 'Subtext', type: 'string'},
+    { name: 'Img1', type: 'string'},
+    { name: 'Img2', type: 'string'},
+    { name: 'Img3', type: 'string'}
+  ]
 })
 
 Builder.registerComponent(Footer, { 
@@ -44,6 +51,9 @@ Builder.registerComponent(Footer, {
 
 Builder.registerComponent(CTASection, { 
   name: 'CTA Section',
+  inputs: [
+    { name: 'bgColor', type: "string"}
+  ]
 })
 
 Builder.registerComponent(FAQ, { 

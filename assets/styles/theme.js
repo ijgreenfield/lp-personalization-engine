@@ -1,4 +1,4 @@
-import { extendTheme } from "@chakra-ui/react"
+import { extendTheme, textDecoration } from "@chakra-ui/react"
 
 const theme = extendTheme({
     fonts: {
@@ -10,7 +10,7 @@ const theme = extendTheme({
         Button: {
             baseStyle: {
                 width: 'max-content',
-                background: '#000'
+                textDecoration: 'underline'
             },
 
             variants: {
@@ -22,7 +22,8 @@ const theme = extendTheme({
                     _hover: {
                         bg: '#fff',
                         color: '#105368'
-                    }
+                    },
+                    textDecoration: 'none'
                 }
             }
         }

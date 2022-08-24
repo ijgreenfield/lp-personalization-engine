@@ -8,9 +8,9 @@ export default function SoloHero(props) {
     if (showForm) {
         return (
             <Box bg='linear-gradient(180deg, #FEF2E1 0%, #FFEEDB 100%);' pos="relative">
-                <Container maxW='1280px' py="96px">
+                <Container maxW='1280px' py={["80px","200px"]}>
                     <Box pos="relative">
-                        <Stack maxW={['100%', '50%']} marginBottom="40px" spacing="16px">
+                        <Stack maxW={['100%', '50%']} marginBottom="40px" spacing="16px" textAlign={["center", "left"]}>
                             <Heading fontSize={["32px","40px"]} fontWeight={500}>{props.Heading}</Heading>
                             <Text>{props.Description}</Text>
                             <InputGroup maxW="400px" alignItems="center">
@@ -22,13 +22,14 @@ export default function SoloHero(props) {
                         </Stack>
                     </Box>
                 </Container>
-                <Box pos="absolute" bottom="0" right="0" w="50%" h="100%">
-                    <Box pos="relative" w="100%" h="600px">
+                <Box pos="absolute" bottom="0" right="0" w={["100%","50%"]} h={["40%","100%"]} display={["none", null, "block"]}>
+                    <Box w="100%" h={["600px"]}>
                         <Image 
                             src="https://cdn.shopify.com/s/files/1/1704/8471/files/NNeoma_Anosike_Look_01_087_1.png?v=1661354236"
                             layout="fill"
-                            objectFit="contain"
+                            objectFit="cover"
                             priority
+                            unoptimized="true"
                         />
                     </Box>
                 </Box>
@@ -53,6 +54,7 @@ export default function SoloHero(props) {
                             layout="fill"
                             objectFit="contain"
                             priority
+                            unoptimized="true"
                         />
                     </Box>
                 </Box>
