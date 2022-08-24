@@ -46,6 +46,7 @@ export default function SoloHero(props) {
                 <Box pos="absolute" bottom="0" right="0" w="50%" display={['none','block']}>
                     <Image 
                         src="https://cdn.shopify.com/s/files/1/1704/8471/files/lp-image.webp?v=1659394060"
+                        layout="fill"
                     />
                 </Box>
             </Box>
@@ -84,6 +85,7 @@ export default function SoloHero(props) {
                 <Box pos="absolute" bottom="0" right="0" w="50%" display={['none','block']}>
                     <Image 
                         src="https://cdn.shopify.com/s/files/1/1704/8471/files/lp-image.webp?v=1659394060"
+                        layout="fill"
                     />
                 </Box>
             </Box>
