@@ -25,9 +25,10 @@ export default function SoloHero(props) {
                 <Box pos="absolute" bottom="0" right="0" w="50%" h="100%" display={['none','block']}>
                     <Box pos="relative" w="100%" h="600px">
                         <Image 
-                            src="https://cdn.shopify.com/s/files/1/1704/8471/files/lp-image.webp?v=1659394060"
+                            src="https://cdn.shopify.com/s/files/1/1704/8471/files/NNeoma_Anosike_Look_01_087_1.png?v=1661354236"
                             layout="fill"
                             objectFit="contain"
+                            priority
                         />
                     </Box>
                 </Box>
@@ -48,9 +49,10 @@ export default function SoloHero(props) {
                 <Box pos="absolute" bottom="0" right="0" w="50%" h="100%" display={['none','block']}>
                     <Box pos="relative" w="100%" h="600px">
                         <Image 
-                            src="https://cdn.shopify.com/s/files/1/1704/8471/files/lp-image.webp?v=1659394060"
+                            src="https://cdn.shopify.com/s/files/1/1704/8471/files/NNeoma_Anosike_Look_01_087_1.png?v=1661354236"
                             layout="fill"
                             objectFit="contain"
+                            priority
                         />
                     </Box>
                 </Box>
