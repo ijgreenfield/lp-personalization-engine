@@ -53,6 +53,9 @@ Builder.registerComponent(FAQ, {
 Builder.registerComponent(SoloHero, { 
   name: 'Solo Hero',
   inputs: [
+    { name: 'Heading', type: 'text'},
+    { name: 'Description', type: 'text'},
+    { name: 'CTA', type: 'text'},
     { name: 'form', type: 'boolean'},
     { name: 'logos', type: 'boolean'}
   ]
