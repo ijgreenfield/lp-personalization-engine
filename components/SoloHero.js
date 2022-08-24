@@ -64,19 +64,22 @@ export default function SoloHero(props) {
                             <Text textTransform="uppercase" fontWeight={600}>As Seen In</Text>
                             <Flex gap={8} marginTop="16px">
                                 <Image 
-                                    width={60}
-                                    height={30}
                                     src="https://cdn.shopify.com/s/files/1/1704/8471/files/vogue-logo.png?v=1660943915"
+                                    layout="fixed"
+                                    width={120}
+                                    height={40}
                                 />
                                 <Image 
-                                    width={60}
-                                    height={30}
                                     src="https://cdn.shopify.com/s/files/1/1704/8471/files/vogue-logo.png?v=1660943915"
+                                    layout="fixed"
+                                    width={120}
+                                    height={40}
                                 />
                                 <Image 
-                                    width={60}
-                                    height={30}
                                     src="https://cdn.shopify.com/s/files/1/1704/8471/files/vogue-logo.png?v=1660943915"
+                                    layout="fixed"
+                                    width={120}
+                                    height={40}
                                 />
                             </Flex>
                         </Box>
