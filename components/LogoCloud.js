@@ -1,4 +1,5 @@
-import { Box, Container, Flex, Text, Image, Link } from "@chakra-ui/react"
+import { Box, Container, Flex, Text, Link } from "@chakra-ui/react"
+import Image from "next/image"
 
 export default function LogoCloud(props) {
     return (
@@ -11,6 +12,7 @@ export default function LogoCloud(props) {
                             <Link pos="relative" w="100%" h="100%">
                                 <Image 
                                     src="https://cdn.shopify.com/s/files/1/1704/8471/files/vogue-logo-bg.webp?v=1661175640"
+                                    layout="fill"
                                     objectFit='cover'
                                 />
                             </Link>
@@ -19,6 +21,8 @@ export default function LogoCloud(props) {
                             <Link pos="relative" w="100%" h="100%">
                                 <Image 
                                     src="https://cdn.shopify.com/s/files/1/1704/8471/files/fast-company-logo-bg.webp?v=1661175800"
+                                    layout="fill"
+                                    objectFit='cover'
                                 />
                             </Link>
                         </Flex>
@@ -26,6 +30,8 @@ export default function LogoCloud(props) {
                             <Link pos="relative" w="100%" h="100%">
                                 <Image 
                                     src="https://cdn.shopify.com/s/files/1/1704/8471/files/GLAMOUR-LOGO_320x_553d90bd-c79e-4261-8774-a4a8924dcdee.webp?v=1661176774"
+                                    layout="fill"
+                                    objectFit='cover'
                                 />
                             </Link>
                         </Flex>
@@ -33,6 +39,8 @@ export default function LogoCloud(props) {
                             <Link pos="relative" w="100%" h="100%">
                                 <Image 
                                     src="https://cdn.shopify.com/s/files/1/1704/8471/files/WIRECUTTER-LOGO_320x_78236170-197a-4091-bbe2-65d247440820.webp?v=1661176917"
+                                    layout="fill"
+                                    objectFit='cover'
                                 />
                             </Link>
                         </Flex>
@@ -40,6 +48,8 @@ export default function LogoCloud(props) {
                             <Link pos="relative" w="100%" h="100%">
                                 <Image 
                                     src="https://cdn.shopify.com/s/files/1/1704/8471/files/HYPEBAE-LOGO_320x_1ff0a6f6-84c5-47ea-917a-ae0e2067df10.webp?v=1661177106"
+                                    layout="fill"
+                                    objectFit='cover'
                                 />
                             </Link>
                         </Flex>

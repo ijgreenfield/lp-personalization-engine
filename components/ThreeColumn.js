@@ -15,7 +15,6 @@ export default function ThreeColumn(props) {
                             <Image 
                                 src="https://cdn.shopify.com/s/files/1/1704/8471/files/Naturopathica_2.png?v=1650278436"
                                 layout="responsive"
-                                borderRadius='24px'
                                 height={275}
                                 width={300}
                             />
@@ -25,7 +24,6 @@ export default function ThreeColumn(props) {
                             <Image 
                                 src="https://cdn.shopify.com/s/files/1/1704/8471/files/Naturopathica_2.png?v=1650278436"
                                 layout="responsive"
-                                borderRadius='24px'
                                 height={275}
                                 width={300}
                             />
@@ -35,7 +33,6 @@ export default function ThreeColumn(props) {
                             <Image 
                                 src="https://cdn.shopify.com/s/files/1/1704/8471/files/Naturopathica_2.png?v=1650278436"
                                 layout="responsive"
-                                borderRadius='24px'
                                 height={275}
                                 width={300}
                             />

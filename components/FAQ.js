@@ -9,7 +9,7 @@ export default function FAQ(props) {
                         <Heading as='h1' textAlign='center' fontWeight={500}>Questions? We have answers.</Heading>
                     </Box>
                     <Box>
-                        <Accordion allowToggle allowMultiple>
+                        <Accordion allowToggle>
                             <AccordionItem>
                                 <AccordionButton>
                                     <Box flex='1' textAlign='left' fontWeight={600}>How are you different from other facial shops?</Box>

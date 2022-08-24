@@ -62,7 +62,7 @@ export default function Path({ page, attributes, locale }: InferGetStaticPropsTy
     <>
       <Head>
         {!page && <meta name="robots" content="noindex" />}
-        <link rel="shortcut icon" href="/static/favicon.ico" />
+        <link rel="shortcut icon" href="/public/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <NextSeo

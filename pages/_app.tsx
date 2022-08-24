@@ -15,6 +15,7 @@ import VideoHero from '@components/VideoHero'
 import LogoCloud from '@components/LogoCloud'
 import Header from '@components/Header'
 import HeaderTransparent from '@components/HeaderTransparent'
+import MapSection from '@components/MapSection'
 
 
 builder.init(builderConfig.apiKey)
@@ -71,4 +72,13 @@ Builder.registerComponent(Header, {
 
 Builder.registerComponent(HeaderTransparent, {
   name: 'Transparent Header',
+})
+
+Builder.registerComponent(MapSection, {
+  name: 'Map Section',
+  inputs: [
+    { name: 'address', type: 'text'},
+    { name: 'phone', type: 'text'},
+    { name: 'email', type: 'text'}
+  ]
 })
