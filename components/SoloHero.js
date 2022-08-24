@@ -36,8 +36,8 @@ export default function SoloHero(props) {
         )
     } else {
         return (
-            <Box bg='linear-gradient(180deg, #FEF2E1 0%, #FFEEDB 100%);'>
-                <Container maxW='1280px' py="96px">
+            <Box bg='linear-gradient(180deg, #FEF2E1 0%, #FFEEDB 100%);' pos="relative">
+                <Container maxW='1280px' py="200px">
                     <Box pos="relative">
                         <Stack maxW={['100%', '50%']} marginBottom="40px" spacing="16px">
                             <Heading fontSize={["32px","40px"]} fontWeight={500}>{props.Heading}</Heading>
