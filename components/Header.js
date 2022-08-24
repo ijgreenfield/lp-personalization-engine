@@ -10,7 +10,7 @@ export default function Header(props) {
                         height="40px"
                     />
                     <Spacer />
-                    <Button variant={["link", null, "primary"]}>Book Your Facial</Button>
+                    <Button variant={["primary", null, "primary"]}>Book Your Facial</Button>
                 </Flex>
             </Container>
         </Box>
