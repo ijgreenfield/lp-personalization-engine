@@ -12,8 +12,9 @@ export default function LogoCloud(props) {
                             <Link pos="relative" w="100%" h="100%">
                                 <Image 
                                     src="https://cdn.shopify.com/s/files/1/1704/8471/files/vogue-logo-bg.webp?v=1661175640"
-                                    layout="fill"
-                                    objectFit='cover'
+                                    layout="fixed"
+                                    width={120}
+                                    height={40}
                                 />
                             </Link>
                         </Flex>
