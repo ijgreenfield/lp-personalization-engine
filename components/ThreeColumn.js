@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function ThreeColumn(props) {
     return (
-        <Box>
+        <Box bg="#f9f4f0">
             <Container maxWidth="1280px">
-                <Stack py="48px" spacing="">
+                <Stack py="48px" spacing="24px">
                     <Stack spacing='16px' maxW={[null, "70%"]} mx="auto">
                         <Heading textAlign="center" maxW={['100%', '60%']} mx="auto" fontWeight={500}>{props.Heading}</Heading>
                         <Text textAlign="center">{props.Subtext}</Text>
@@ -20,7 +20,7 @@ export default function ThreeColumn(props) {
                                     unoptimized="true"
                                 />
                             </Box>
-                            <Heading as='h3' fontSize='24px' fontWeight={500} textAlign="center" mt='16px' px='24px'>Lorem ipsum dolor mont blanc</Heading>
+                            <Heading as='h3' fontSize='24px' fontWeight={500} textAlign="center" mt='16px' px='24px'>Tell us about your skincare goals.</Heading>
                         </Box>
                         <Box>
                             <Box pos="relative" w="100%" h={["205px", null, "225px"]} borderRadius="8px" overflow="hidden">
@@ -31,7 +31,7 @@ export default function ThreeColumn(props) {
                                     unoptimized="true"
                                 />
                             </Box>
-                            <Heading as='h3' fontSize='24px' fontWeight={500} textAlign="center" mt='16px' px='24px'>Lorem ipsum dolor mont blanc</Heading>
+                            <Heading as='h3' fontSize='24px' fontWeight={500} textAlign="center" mt='16px' px='24px'>Enjoy a personalized, 50-minute treatment.</Heading>
                         </Box>
                         <Box>
                             <Box pos="relative" w="100%" h={["205px", null, "225px"]} borderRadius="8px" overflow="hidden">
@@ -42,7 +42,7 @@ export default function ThreeColumn(props) {
                                     unoptimized="true"
                                 />
                             </Box>
-                            <Heading as='h3' fontSize='24px' fontWeight={500} textAlign="center" mt='16px' px='24px'>Lorem ipsum dolor mont blanc</Heading>
+                            <Heading as='h3' fontSize='24px' fontWeight={500} textAlign="center" mt='16px' px='24px'>Learn how to enhance your daily routine.</Heading>
                         </Box>
                     </SimpleGrid>
                 </Stack>

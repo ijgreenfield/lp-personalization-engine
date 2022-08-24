@@ -15,6 +15,7 @@ export default function LogoCloud(props) {
                                     layout="fixed"
                                     width={120}
                                     height={40}
+                                    unoptimized
                                 />
                             </Link>
                         </Flex>
@@ -25,6 +26,7 @@ export default function LogoCloud(props) {
                                     layout="fixed"
                                     width={120}
                                     height={40}
+                                    unoptimized
                                 />
                             </Link>
                         </Flex>
@@ -35,6 +37,7 @@ export default function LogoCloud(props) {
                                     layout="fixed"
                                     width={120}
                                     height={40}
+                                    unoptimized
                                 />
                             </Link>
                         </Flex>
@@ -45,6 +48,7 @@ export default function LogoCloud(props) {
                                     layout="fixed"
                                     width={120}
                                     height={40}
+                                    unoptimized
                                 />
                             </Link>
                         </Flex>
@@ -55,6 +59,7 @@ export default function LogoCloud(props) {
                                     layout="fixed"
                                     width={120}
                                     height={40}
+                                    unoptimized
                                 />
                             </Link>
                         </Flex>

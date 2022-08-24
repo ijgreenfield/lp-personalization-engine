@@ -17,6 +17,7 @@ import Header from '@components/Header'
 import HeaderTransparent from '@components/HeaderTransparent'
 import Hero from '@components/Hero'
 import HeroSection from '@components/Hero'
+import Testimnonials from '@components/Testimonials'
 
 
 builder.init(builderConfig.apiKey)
@@ -95,4 +96,8 @@ Builder.registerComponent(Header, {
 
 Builder.registerComponent(HeaderTransparent, {
   name: 'Transparent Header',
+})
+
+Builder.registerComponent(Testimnonials, {
+  name: 'Testimonials',
 })
