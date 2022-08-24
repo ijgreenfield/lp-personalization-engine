@@ -19,7 +19,7 @@ export default function HeroSection(props) {
                 <Center alignItems="center" h="100%" flexDirection="column" textAlign="center">
                     <Heading zIndex="10" color="#fff">Hey this is Ian!</Heading>
                     <Text zIndex="10" color="#fff" my={5}>{props.Subtext}</Text>
-                    <Button zIndex="10" variant='secondary'>This is a Button</Button>
+                    <Button zIndex="10" variant='secondary'>This is a Button!</Button>
                 </Center>
             </Container>
         </Box>
