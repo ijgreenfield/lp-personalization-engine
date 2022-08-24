@@ -22,7 +22,7 @@ export default function SoloHero(props) {
                         </Stack>
                     </Box>
                 </Container>
-                <Box pos="absolute" bottom="0" right="0" w="50%" h="100%" display={['none','block']}>
+                <Box pos="absolute" bottom="0" right="0" w="50%" h="100%">
                     <Box pos="relative" w="100%" h="600px">
                         <Image 
                             src="https://cdn.shopify.com/s/files/1/1704/8471/files/NNeoma_Anosike_Look_01_087_1.png?v=1661354236"
@@ -46,7 +46,7 @@ export default function SoloHero(props) {
                         </Stack>
                     </Box>
                 </Container>
-                <Box pos="absolute" bottom="0" right="0" w="50%" h="100%" display={['none','block']}>
+                <Box pos="absolute" bottom="0" right="0" w="50%" h="100%">
                     <Box pos="relative" w="100%" h="600px">
                         <Image 
                             src="https://cdn.shopify.com/s/files/1/1704/8471/files/NNeoma_Anosike_Look_01_087_1.png?v=1661354236"
