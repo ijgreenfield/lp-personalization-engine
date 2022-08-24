@@ -11,8 +11,9 @@ export default function HeroSection(props) {
                         layout="fill"
                         objectFit="cover"
                         unoptimized="true"
+                        priority
                     />
-                    <Box bg="#000" opacity=".5" pos="absolute" h="100%" w="100%" zIndex="1"></Box>
+                    <Box bg="#000" opacity=".35" pos="absolute" h="100%" w="100%" zIndex="1"></Box>
                 </Box>
             </Box>
             <Container zIndex="5" h="100%">
