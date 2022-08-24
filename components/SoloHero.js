@@ -7,7 +7,7 @@ export default function SoloHero(props) {
 
     if (showForm) {
         return (
-            <Box bg='linear-gradient(180deg, #FEF2E1 0%, #FFEEDB 100%);'>
+            <Box bg='linear-gradient(180deg, #FEF2E1 0%, #FFEEDB 100%);' pos="relative">
                 <Container maxW='1280px' py="96px">
                     <Box pos="relative">
                         <Stack maxW={['100%', '50%']} marginBottom="40px" spacing="16px">
@@ -22,8 +22,8 @@ export default function SoloHero(props) {
                         </Stack>
                     </Box>
                 </Container>
-                <Box pos="absolute" bottom="0" right="0" w="50%" display={['none','block']}>
-                    <Box pos="relative" w="100%" h="500px">
+                <Box pos="absolute" bottom="0" right="0" w="50%" h="100%" display={['none','block']}>
+                    <Box pos="relative" w="100%" h="600px">
                         <Image 
                             src="https://cdn.shopify.com/s/files/1/1704/8471/files/lp-image.webp?v=1659394060"
                             layout="fill"
