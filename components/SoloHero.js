@@ -63,12 +63,13 @@ export default function SoloHero(props) {
                         <Box>
                             <Text textTransform="uppercase" fontWeight={600}>As Seen In</Text>
                             <Flex gap={8} marginTop="16px">
-                                <Image 
-                                    src="https://cdn.shopify.com/s/files/1/1704/8471/files/vogue-logo.png?v=1660943915"
-                                    layout="responsive"
-                                    width={120}
-                                    height={40}
-                                />
+                                <Box pos="relative" w="100px" h="50px">
+                                    <Image 
+                                        src="https://cdn.shopify.com/s/files/1/1704/8471/files/vogue-logo.png?v=1660943915"
+                                        layout="fill"
+                                        objectFit="contain"
+                                    />
+                                </Box>
                                 <Image 
                                     src="https://cdn.shopify.com/s/files/1/1704/8471/files/vogue-logo.png?v=1660943915"
                                     layout="responsive"
