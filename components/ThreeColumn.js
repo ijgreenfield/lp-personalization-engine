@@ -14,8 +14,9 @@ export default function ThreeColumn(props) {
                         <Box pos="relative" w="100%" h="200px">
                             <Image 
                                 src="https://cdn.shopify.com/s/files/1/1704/8471/files/Naturopathica_2.png?v=1650278436"
-                                layout="fill"
-                                objectFit="contain"
+                                layout="fixed"
+                                width="100%"
+                                height={200}
                             />
                             <Heading as='h3' fontSize='24px' fontWeight={500} textAlign="center" mt='16px' px='24px'>Lorem ipsum dolor mont blanc</Heading>
                         </Box>
