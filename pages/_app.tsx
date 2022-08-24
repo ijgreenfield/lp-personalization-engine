@@ -15,7 +15,8 @@ import VideoHero from '@components/VideoHero'
 import LogoCloud from '@components/LogoCloud'
 import Header from '@components/Header'
 import HeaderTransparent from '@components/HeaderTransparent'
-import MapSection from '@components/MapSection'
+import Hero from '@components/Hero'
+import HeroSection from '@components/Hero'
 
 
 builder.init(builderConfig.apiKey)
@@ -29,8 +30,17 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   )
 }
 
-Builder.registerComponent(VideoHero, { 
+Builder.registerComponent(HeroSection, {
   name: 'Hero',
+  inputs: [
+    { name: 'Heading', type: 'string'},
+    { name: 'Subtext', type: 'string'},
+    { name: 'bgImage', type: 'string'}
+  ]
+})
+
+Builder.registerComponent(VideoHero, { 
+  name: 'VideoHero',
   inputs: [{ name: 'title', type: 'text' }, { name: 'paragraph', type: 'text'}]
 })
 
@@ -85,13 +95,4 @@ Builder.registerComponent(Header, {
 
 Builder.registerComponent(HeaderTransparent, {
   name: 'Transparent Header',
-})
-
-Builder.registerComponent(MapSection, {
-  name: 'Map Section',
-  inputs: [
-    { name: 'address', type: 'text'},
-    { name: 'phone', type: 'text'},
-    { name: 'email', type: 'text'}
-  ]
 })

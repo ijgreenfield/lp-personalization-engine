@@ -24,6 +24,12 @@ const theme = extendTheme({
                         color: '#105368'
                     },
                     textDecoration: 'none'
+                },
+
+                'secondary': {
+                    bg: '#fff',
+                    color: '#000',
+                    textDecoration: 'none'
                 }
             }
         }
