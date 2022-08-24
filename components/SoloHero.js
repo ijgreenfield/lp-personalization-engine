@@ -57,7 +57,7 @@ export default function SoloHero(props) {
                 <Container maxW='1280px' py="96px">
                     <Box pos="relative">
                         <Stack maxW={['100%', '50%']} marginBottom="40px" spacing="16px">
-                            <Heading fontSize={["32px","56px"]} fontWeight={500}>Welcome to your Heyday, Plymouth Meeting</Heading>
+                            <Heading fontSize={["32px","40px"]} fontWeight={500}>Welcome to your Heyday, Plymouth Meeting</Heading>
                             <Text>New York Magazine’s #1 Facial is on it’s way to Plymouth Meeting. Sign up for news about our shop opening, including early access to facial appointments and exclusive pre-opening offers!</Text>
                         </Stack>
                         <Box>
@@ -65,19 +65,19 @@ export default function SoloHero(props) {
                             <Flex gap={8} marginTop="16px">
                                 <Image 
                                     src="https://cdn.shopify.com/s/files/1/1704/8471/files/vogue-logo.png?v=1660943915"
-                                    layout="fixed"
+                                    layout="responsive"
                                     width={120}
                                     height={40}
                                 />
                                 <Image 
                                     src="https://cdn.shopify.com/s/files/1/1704/8471/files/vogue-logo.png?v=1660943915"
-                                    layout="fixed"
+                                    layout="responsive"
                                     width={120}
                                     height={40}
                                 />
                                 <Image 
                                     src="https://cdn.shopify.com/s/files/1/1704/8471/files/vogue-logo.png?v=1660943915"
-                                    layout="fixed"
+                                    layout="responsive"
                                     width={120}
                                     height={40}
                                 />
