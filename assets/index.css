@@ -43,3 +43,14 @@ input::placeholder {
 .grayscale {
   filter: grayscale(1);
 }
+
+
+.Testimonials_swiperTop__WHiV6 .swiper-wrapper {
+  margin-left: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Testimonials_swiperTop__WHiV6 .swiper-wrapper {
+    margin-left: 0;
+  }
+}

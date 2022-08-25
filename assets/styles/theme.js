@@ -30,7 +30,9 @@ const theme = extendTheme({
                 'secondary': {
                     bg: '#fff',
                     color: '#000',
-                    textDecoration: 'none'
+                    textDecoration: 'none',
+                    fontFamily: 'Cadiz Semibold',
+                    fontSize: '14px',
                 }
             }
         }

@@ -4,19 +4,19 @@ import Image from "next/image"
 
 export default function Testimonial(props) {
     return (
-        <Box bg="#ffffff" w="max-content" maxW="560px" px="24px" py="32px" borderRadius="8px">
+        <Box bg="#ffffff" w="100%" maxW="560px" px="24px" py="32px" borderRadius="8px" minH="240px">
             <Stack textAlign="left">
                 <HStack>
                     <Box pos="relative" w="65px" h="65px" borderRadius="999px" overflow="hidden">
                         <Image 
                             src={props.client.image}
                             layout="fill"
-                            objectFit="contain"
+                            objectFit="cover"
                             unoptimized
                         />
                     </Box>
                     <Flex flexDir="column">
-                        <Text fontWeight="black">{props.client.name}</Text>
+                        <Text fontFamily="Cadiz SemiBold">{props.client.name}</Text>
                         <Text fontSize="14px" color="#9A9B9E">Heyday Customer since {props.client.memberSince}</Text>
                     </Flex>
                 </HStack>
