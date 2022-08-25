@@ -7,8 +7,8 @@ export default function CTASection(props) {
             <Container>
                 <Center py={['80px', null, '104px']}>
                     <Stack textAlign='center' spacing='32px'>
-                        <Heading fontWeight={500}>Questions? We have answers.</Heading>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor montalban bingo bango. </Text>
+                        <Heading fontWeight={500}>{props.Heading}</Heading>
+                        <Text>{props.Subtext}</Text>
                         <Box textAlign='center'>
                             <Button variant='primary'>Book Your Facial</Button>
                         </Box>

@@ -8,6 +8,8 @@ const LazyCTA = dynamic(async () => {
 Builder.registerComponent(LazyCTA, { 
 name: 'CTA Section',
 inputs: [
-    { name: 'bgColor', type: "string"}
+    { name: 'bgColor', type: "string"},
+    { name: 'Heading', type:"string"},
+    { name: 'Subtext', type: "string"}
 ]
 })
