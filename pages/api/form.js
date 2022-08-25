@@ -23,7 +23,7 @@ export default async function handler(req, res) {
   await cors(req, res)
 
   const data = {
-    token: 'pk_16fa82ce34e5d64ff8494238e0e3d705eb',
+    token: 'UFdULB',
     event: 'LP Form',
     properties: {
       Email: req.body.email,
