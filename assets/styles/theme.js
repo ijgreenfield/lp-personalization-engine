@@ -19,6 +19,7 @@ const theme = extendTheme({
                     color: 'white',
                     border: '1px',
                     borderColor: '#105368',
+                    fontFamily: 'Cadiz SemiBold',
                     _hover: {
                         bg: '#fff',
                         color: '#105368'

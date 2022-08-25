@@ -4,6 +4,7 @@ import builderConfig from '../config/builder'
 import '../assets/index.css'
 import { ChakraProvider } from '@chakra-ui/react'
 import Fonts from '@assets/styles/Fonts'
+import Head from 'next/head'
 import theme from '../assets/styles/theme'
 import "../components/CtaSection/CtaSection.builder"
 import "../components/FAQ/FAQ.builder"
@@ -22,6 +23,10 @@ builder.init(builderConfig.apiKey)
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
+      <Head>
+        <link rel="icon" href="/public/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Fonts />
       <Component {...pageProps} />
     </ChakraProvider>
