@@ -15,7 +15,7 @@ export default function Header(props) {
                         height="40px"
                     />
                     <Spacer />
-                    <Button variant={["primary", null, "primary"]} fontSize="14px" onClick={openForm}>{props.Cta}</Button>
+                    <Button variant={["primary", null, "primary"]} fontSize="16px" onClick={openForm}>{props.Cta}</Button>
                 </Flex>
             </Container>
         </Box>

@@ -10,7 +10,11 @@ const theme = extendTheme({
         Button: {
             baseStyle: {
                 width: 'max-content',
-                textDecoration: 'underline'
+                textDecoration: 'underline',
+                paddingTop: '12px',
+                paddingBottom: '12px',
+                paddingLeft: '16px',
+                paddingRight: '16px',
             },
 
             variants: {

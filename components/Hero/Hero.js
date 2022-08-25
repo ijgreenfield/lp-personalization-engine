@@ -17,7 +17,6 @@ export default function HeroSection(props) {
                         src={props.bgImage}
                         layout="fill"
                         objectFit="cover"
-                        quality={70}
                         priority
                     />
                     <Box bg="#000" opacity=".35" pos="absolute" h="100%" w="100%" zIndex="1"></Box>
@@ -27,7 +26,7 @@ export default function HeroSection(props) {
                 <Center alignItems="center" h="100%" flexDirection="column" textAlign="center">
                     <Heading zIndex="10" color="#fff">{props.Heading}</Heading>
                     <Text zIndex="10" color="#fff" my={5}>{props.Subtext}</Text>
-                    <Button zIndex="10" variant='secondary' onClick={openForm}>{props.Cta}</Button>
+                    <Button zIndex="10" variant='secondary' onClick={openForm} fontSize="16px">{props.Cta}</Button>
                     <Modal />
                 </Center>
             </Container>
