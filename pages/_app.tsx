@@ -18,6 +18,7 @@ import "../components/ThreeColumn/ThreeColumn.builder"
 import "../components/VideoHero/VideoHero.builder"
 import "../components/FormHero/FormHero.builder"
 import "../components/AnnouncementBar/AnnouncementBar.builder"
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 
 builder.init(builderConfig.apiKey)
@@ -30,6 +31,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB"></script>
+      <GoogleAnalytics />
       <Fonts />
       <Component {...pageProps} />
     </ChakraProvider>
