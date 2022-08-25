@@ -18,9 +18,9 @@ export default function HeroSection(props) {
             </Box>
             <Container zIndex="5" h="100%">
                 <Center alignItems="center" h="100%" flexDirection="column" textAlign="center">
-                    <Heading zIndex="10" color="#fff">Hey this is Ian!</Heading>
+                    <Heading zIndex="10" color="#fff">{props.Heading}</Heading>
                     <Text zIndex="10" color="#fff" my={5}>{props.Subtext}</Text>
-                    <Button zIndex="10" variant='secondary'>This is a Button</Button>
+                    <Button zIndex="10" variant='secondary'>{props.Cta}</Button>
                 </Center>
             </Container>
         </Box>

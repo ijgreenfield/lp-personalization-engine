@@ -15,7 +15,7 @@ export default function Testimnonials() {
                 <Center textAlign="center">
                     <Heading fontWeight={500}>Stories from the Heyday Community</Heading>
                 </Center>
-                <Box px={["20px", null, null]}>
+                <Box px={["20px", null, "0px"]}>
                     <Swiper
                         slidesPerView={2.5}
                         spaceBetween={10}
@@ -26,6 +26,9 @@ export default function Testimnonials() {
                             300: {
                                 pagination: true,
                                 slidesPerView: 1,
+                            },
+                            768: {
+                                slidesPerView: 2.5,
                             }
                         }}
                     >

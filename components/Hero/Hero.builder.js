@@ -10,6 +10,7 @@ const LazyHero = dynamic(async () => {
     inputs: [
       { name: 'Heading', type: 'string'},
       { name: 'Subtext', type: 'string'},
-      { name: 'bgImage', type: 'string'}
+      { name: 'bgImage', type: 'string'},
+      { name: 'Cta', type: 'string'},
     ]
   })
