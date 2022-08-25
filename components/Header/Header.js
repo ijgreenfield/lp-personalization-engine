@@ -6,7 +6,7 @@ export default function Header(props) {
             <Container maxWidth="1280px">
                 <Flex alignItems="center" py="16px">
                     <Image 
-                        src="https://cdn.shopify.com/s/files/1/1704/8471/files/logo-checkout_69d9b6fc-624f-4ac5-89b2-ecb186991eaa.png?v=1630526092"
+                        src={props.logo}
                         height="40px"
                     />
                     <Spacer />

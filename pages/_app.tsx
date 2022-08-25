@@ -17,6 +17,7 @@ import "../components/Testimonials/Testimonials.builder"
 import "../components/ThreeColumn/ThreeColumn.builder"
 import "../components/VideoHero/VideoHero.builder"
 import "../components/FormHero/FormHero.builder"
+import "../components/AnnouncementBar/AnnouncementBar.builder"
 
 
 builder.init(builderConfig.apiKey)

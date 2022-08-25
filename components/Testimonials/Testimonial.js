@@ -21,7 +21,7 @@ export default function Testimonial(props) {
                     </Flex>
                 </HStack>
                 <Box>
-                    <Text>{props.client.review}</Text>
+                    <Text fontSize={["14px", "16px"]}>{props.client.review}</Text>
                 </Box>
             </Stack>
         </Box>
