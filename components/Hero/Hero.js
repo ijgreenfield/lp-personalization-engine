@@ -15,16 +15,11 @@ export default function HeroSection(props) {
         onSubmit: async (values, { resetForm }) => {
             await Axios({
                 method: 'POST',
-                url: 'https://a.klaviyo.com/onsite/v1/subscriptions/?company_id=UFdULB',
+                url: 'https://manage.kmail-lists.com/ajax/subscriptions/subscribe?',
                 data: {
-                    data: {
-                        attributes: {
-                            custom_source: "Standard Form",
-                            list_id: 'UT2JxZ',
-                            ...values,
-                        },
-                        type: 'subscription',
-                    }
+                    g: 'UT2JxZ',
+                    ...values
+                    
                 }
               })
               resetForm()
