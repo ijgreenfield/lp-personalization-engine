@@ -2,6 +2,11 @@ import { Center, Container, Heading, Box, Button, Stack, Text } from "@chakra-ui
 
 
 export default function CTASection(props) {
+    const  openForm = () => {
+        window._klOnsite = window._klOnsite || [];
+        window._klOnsite.push(['openForm', 'Wu6tZL']);
+    }
+
     return (
         <Box bg={props.bgColor}>
             <Container>
@@ -10,7 +15,7 @@ export default function CTASection(props) {
                         <Heading fontWeight={500}>{props.Heading}</Heading>
                         {props.Subtext && <Text>{props.Subtext}</Text>}
                         <Box textAlign='center'>
-                            <Button variant='primary'>Book Your Facial</Button>
+                            <Button variant='primary' onClick={openForm}>Book Your Facial</Button>
                         </Box>
                     </Stack>
                 </Center>

@@ -17,7 +17,6 @@ export default function HeroSection(props) {
                         src={props.bgImage}
                         layout="fill"
                         objectFit="cover"
-                        unoptimized="true"
                         priority
                     />
                     <Box bg="#000" opacity=".35" pos="absolute" h="100%" w="100%" zIndex="1"></Box>
