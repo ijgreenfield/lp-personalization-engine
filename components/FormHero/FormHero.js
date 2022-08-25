@@ -27,11 +27,15 @@ export default function FormHero(props) {
                 <Center alignItems="center" h="100%" flexDirection="column" textAlign="center">
                     <Heading zIndex="10" color="#fff">{props.Heading}</Heading>
                     <Text zIndex="10" color="#fff" my={5}>{props.Subtext}</Text>
-                    <Stack zIndex={100} maxW="300px" textAlign="center" alignItems="center">
-                        <Input placeholder="Your email" bg="#fff"/>
-                        <Input placeholder="Your phone" bg="#fff"/>
-                        <Button zIndex="10" variant='secondary' onClick={openForm} mx="auto">{props.Cta}</Button>
-                    </Stack>
+                    <Box zIndex={100} textAlign="center" alignItems="center" w="100%">
+                        <form>
+                            <Stack>
+                                <Input bg="#fff" size="lg" w={["100%", "400px"]} placeholder="Your Email"/>
+                                <Input bg="#fff" size="lg" placeholder="Phone"/>
+                                <Button variant="secondary">{props.Cta}</Button>
+                            </Stack>
+                        </form>
+                    </Box>
                     <Modal />
                 </Center>
             </Container>
