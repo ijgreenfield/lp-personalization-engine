@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 
 export default function Testimnonials() {
     return (
-        <Box bg="#f9f4f0" py="48px">
+        <Box bg="#f9f4f0" py="64px">
             <Stack spacing={8}>
                 <Center textAlign="center">
                     <Heading fontWeight={500}>Stories from the Heyday Community</Heading>
