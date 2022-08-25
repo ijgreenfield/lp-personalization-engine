@@ -8,6 +8,7 @@ const LazyHeader = dynamic(async () => {
 Builder.registerComponent(LazyHeader, {
     name: "Header w/ Button",
     inputs: [
-      {name: 'logo', type: 'string'}
+      {name: 'logo', type: 'string'},
+      { name: 'Cta', type: 'string'}
     ]
 })
