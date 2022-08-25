@@ -6,7 +6,7 @@ export default function LogoCloud(props) {
         <Box py="48px" textAlign="center">
             <Container>
                 <Box>
-                    <Text my="8px" textTransform="uppercase" fontWeight="600" fontSize="xl">As Seen In</Text>
+                    <Text my="8px" textTransform="uppercase" fontWeight="600" fontSize="md">As Seen In</Text>
                     <Flex justify="center" wrap="wrap" maxW="590px" mx="auto">
                         <Flex w="100%" maxW="33%" my="1em" pos="relative">
                             <Link pos="relative" w="100%" h="100%">
