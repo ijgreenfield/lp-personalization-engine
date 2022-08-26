@@ -1,14 +1,11 @@
-import { NextSeo } from 'next-seo'
 import { useRouter } from 'next/router'
 import {
   BuilderComponent,
-  Builder,
   builder,
   useIsPreviewing
 } from '@builder.io/react'
 import builderConfig from '../../config/builder'
 import DefaultErrorPage from 'next/error'
-import Head from 'next/head'
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 import { PersonalizedURL } from '@builder.io/personalization-utils'
 import { useEffect } from 'react'
@@ -60,23 +57,6 @@ export default function Path({ page, attributes, locale }: InferGetStaticPropsTy
   const { title, description, image } = page?.data || {}
   return (
     <>
-      <NextSeo
-        title={title}
-        description={description}
-        openGraph={{
-          type: 'website',
-          title,
-          description,
-          images: [
-            {
-              url: image,
-              width: 800,
-              height: 600,
-              alt: title
-            }
-          ]
-        }}
-      />
       {(isPreviewingInBuilder || page) ? (
         <>
         <BuilderComponent
