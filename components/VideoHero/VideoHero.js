@@ -5,14 +5,14 @@ export default function VideoHero(props) {
     return (
         <Box>
             <Box pos="relative" h="100%" pt="96px" pb="48px">
-                <Flex pos={["relative","absolute"]} top="0" right="0" left="0" bottom="0" zIndex={5} m="auto" h="max-content" w="80%" justify="space-between" alignItems="center" flexDirection={["column", "row"]}>
+                <Flex pos={["relative","absolute"]} top="0" right="0" left="0" bottom="0" zIndex={5} m={["0","auto"]} px="20px" h="max-content" w={["100%","80%"]} justify="space-between" alignItems="center" flexDirection={["column", "row"]}>
                     <Stack maxW={["100%","50%"]} textAlign={["center", "left"]} spacing="24px">
                         <Heading color="#fff" as="h1" size="2xl" lineHeight="125%">Your Exclusive Offer</Heading>
                         <Text color="#fff" fontSize="14px" display={["none", "block"]}>Heyday® is more than a facial. It’s a journey of self-discovery – measured in lorem, championed by the community, and fueled by the desire to lorem ipsum dolor blah. BOOK NOW & GET YOUR FIRST FACIAL HALF OFF at participating locations.</Text>
                     </Stack>
                     <Stack maxW="460px" w="100%" h="auto" minW={[null,"460px"]} bg="#fff" p={["16px","30px"]} borderRadius="8px" alignItems="center" textAlign="center" display='block' spacing="12px" my="16px">
                         <Box>
-                            <Heading as="h3" size="md">Unlock 50% Off Your First Facial</Heading>
+                            <Heading as="h3" size="lg">Unlock 50% Off Your First Facial</Heading>
                         </Box>
                         <Stack spacing="8px" alignItems="center">
                             <Input placeholder="First Name*" size="lg" display={["none", "block"]}/>
@@ -24,7 +24,7 @@ export default function VideoHero(props) {
                             <Button variant="primary" mx="auto">Book Your Facial</Button>
                         </Stack>
                     </Stack>
-                    <Text color="#fff" fontSize="14px" display={["block", "none"]}>Heyday® is more than a facial. It’s a journey of self-discovery – measured in lorem, championed by the community, and fueled by the desire to lorem ipsum dolor blah. BOOK NOW & GET YOUR FIRST FACIAL HALF OFF at participating locations.</Text>
+                    <Text color="#fff" fontSize="14px" display={["none", "none"]}>Heyday® is more than a facial. It’s a journey of self-discovery – measured in lorem, championed by the community, and fueled by the desire to lorem ipsum dolor blah. BOOK NOW & GET YOUR FIRST FACIAL HALF OFF at participating locations.</Text>
                 </Flex>
                 <Box bg="rgb(0,0,0,.5)" pos="absolute" top="0" left="0" zIndex={2} w="100%" h="100%"></Box>
                 <Box pos="absolute" top="0" left="0" zIndex={1} w="100%" h="100%" display={["block", null, "none"]}>
