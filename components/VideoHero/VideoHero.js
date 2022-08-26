@@ -11,11 +11,11 @@ export default function VideoHero(props) {
                         <Heading color="#fff" as="h1" size="3xl" lineHeight="125%" textAlign={["left"]} fontFamily="Cadiz SemiBold" fontWeight="700" fontStyle="italic">Your Exclusive Offer</Heading>
                         <Text color="#fff" fontSize="14px" display={["none", "block"]}>Heyday® is more than a facial. It’s a journey of self-discovery – measured in lorem, championed by the community, and fueled by the desire to lorem ipsum dolor blah. BOOK NOW & GET YOUR FIRST FACIAL HALF OFF at participating locations.</Text>
                     </Stack>
-                    <Stack maxW="460px" w="100%" h="auto" minW={[null,"460px"]} bg="#fff" p={["20px","30px"]} borderRadius="8px" alignItems="center" textAlign="center" display='block' spacing="12px" my="16px">
+                    <Stack maxW="460px" w="100%" h="auto" minW={[null,"460px"]} bg="#fff" p={["20px","30px"]} borderRadius="8px" alignItems="center" textAlign="center" display='block' spacing="16px" my="16px">
                         <Box>
-                            <Heading as="h3" size="lg" fontFamily="Cadiz SemiBold" textTransform="uppercase">50% Off Your First Facial</Heading>
+                            <Heading as="h3" size="lg" fontFamily="Cadiz SemiBold" textTransform={["uppercase", "none"]}>50% Off Your First Facial</Heading>
                         </Box>
-                        <Flex alignItems="center" justifyContent="center">
+                        <Flex alignItems="center" justifyContent="center" mb="20px">
                             <Icon as={MdLocationPin} h={8} w={8} color="#105368"/>
                             <Text fontFamily="Cadiz SemiBold" color="#105368">Plymouth Meeting</Text>
                         </Flex>
