@@ -37,7 +37,6 @@ export default function VideoHero(props) {
                             src="https://cdn.shopify.com/s/files/1/1704/8471/files/Recess_HeyDay-66_1.png?v=1659042552"
                             layout="fill"
                             objectFit="cover"
-                            unoptimized
                         />
                 </Box>
                 {/*<Box zIndex={1} h="100%" display={["none", null, "block"]}>
