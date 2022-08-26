@@ -19,7 +19,7 @@ export default function VideoHero(props) {
                         </Box>
                         <Flex alignItems="center" justifyContent="center" mb="20px">
                             <Icon as={MdLocationPin} h={8} w={8} color="#105368"/>
-                            <Text fontFamily="Cadiz SemiBold" color="#105368">Plymouth Meeting</Text>
+                            <Text fontFamily="Cadiz SemiBold" color="#105368">{props.location}</Text>
                         </Flex>
                         <div className={klaviyo_form}></div>
                         <script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script> 
