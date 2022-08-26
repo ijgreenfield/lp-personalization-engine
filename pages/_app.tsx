@@ -30,10 +30,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/static/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB"></script>
-      <GoogleAnalytics />
-      <Fonts />
       <Component {...pageProps} />
+      <Fonts />
+      <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB"></script>
     </ChakraProvider>
   )
 }
