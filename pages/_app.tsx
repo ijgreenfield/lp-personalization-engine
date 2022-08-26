@@ -35,7 +35,16 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <Fonts />
       <Component {...pageProps} />
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-42488621-18"></Script>
+      <Script async strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=UA-42488621-18"></Script>
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-42488621-18');
+        `}
+      </Script>
       <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB"></script>
       <script dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
