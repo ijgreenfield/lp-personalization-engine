@@ -39,7 +39,7 @@ export default function Testimnonials() {
                         </Box>
                     </Swiper>
                 </Box>
-                <Box display={["none", "inline-block"]}>
+                {/*<Box display={["none", "inline-block"]}>
                     <Swiper
                         slidesPerView={2.5}
                         spaceBetween={10}
@@ -51,7 +51,7 @@ export default function Testimnonials() {
                         </SwiperSlide>
                         ))}
                     </Swiper>
-                </Box>
+                        </Box> */}
             </Stack>
         </Box>
     )
