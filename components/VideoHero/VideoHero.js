@@ -3,6 +3,8 @@ import Image from "next/image"
 import { MdLocationPin } from "react-icons/md";
 
 export default function VideoHero(props) {
+    const FORM_ID = props.form_id
+    const klaviyo_form = `klaviyo-form-${FORM_ID}`
     return (
         <Box>
             <Box pos="relative" h="100%" pt={["104px", null, null, "0px"]} pb={["48px", null, null, "0"]}>
@@ -19,7 +21,7 @@ export default function VideoHero(props) {
                             <Icon as={MdLocationPin} h={8} w={8} color="#105368"/>
                             <Text fontFamily="Cadiz SemiBold" color="#105368">Plymouth Meeting</Text>
                         </Flex>
-                        <div className="klaviyo-form-SHBX3c"></div>
+                        <div className={klaviyo_form}></div>
                         <script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script> 
                     </Stack>
                     <Text color="#fff" fontSize="14px" display={["none", "none"]}>Heyday® is more than a facial. It’s a journey of self-discovery – measured in lorem, championed by the community, and fueled by the desire to lorem ipsum dolor blah. BOOK NOW & GET YOUR FIRST FACIAL HALF OFF at participating locations.</Text>
