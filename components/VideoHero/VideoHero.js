@@ -15,7 +15,7 @@ export default function VideoHero(props) {
                     </Stack>
                     <Stack maxW="460px" w={["100%", null, "50%"]} h="auto" minW={[null,"460px"]} bg="#fff" p={["20px","30px"]} borderRadius="8px" alignItems="center" textAlign="center" display='block' spacing="16px" my="16px">
                         <Box>
-                            <Heading as="h3" size="lg" fontFamily="Cadiz SemiBold" textTransform={["uppercase", "none"]}>50% Off Your First Facial</Heading>
+                            <Heading as="h3" size="lg" fontFamily="Cadiz SemiBold" textTransform={["uppercase", "none"]}>{props.formHeading}</Heading>
                         </Box>
                         <Flex alignItems="center" justifyContent="center" mb="20px">
                             <Icon as={MdLocationPin} h={8} w={8} color="#105368"/>

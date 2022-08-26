@@ -10,6 +10,7 @@ Builder.registerComponent(LazyVideoHero, {
   inputs: [{ name: 'title', type: 'text' }, 
   { name: 'description', type: 'text'},
   { name: 'location', type: 'string'},
-  { name: 'form_id', type: 'string'}
+  { name: 'form_id', type: 'string'},
+  { name: 'formHeading', type: 'string'}
 ]
 })
