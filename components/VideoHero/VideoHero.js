@@ -40,13 +40,13 @@ export default function VideoHero(props) {
                             unoptimized
                         />
                 </Box>
-                <Box zIndex={1} h="100%" display={["none", null, "block"]}>
+                {/*<Box zIndex={1} h="100%" display={["none", null, "block"]}>
                     <Box minH="80vh">
                         <video muted autoPlay loop width="100%" height="100%">
                             <source src="https://cdn.shopify.com/videos/c/o/v/328ec4937774489088ea9fc2eef95cfc.mp4"/>
                         </video>
                     </Box>
-                </Box>
+                </Box>*/}
             </Box>
         </Box>
     )
