@@ -3,6 +3,7 @@ import { builder } from '@builder.io/react'
 import builderConfig from '../config/builder'
 import '../assets/index.css'
 import { ChakraProvider } from '@chakra-ui/react'
+import '@components/FacebookPixel'
 //import Fonts from '@assets/styles/Fonts'
 import Head from 'next/head'
 import theme from '../assets/styles/theme'
@@ -25,6 +26,7 @@ import Script from 'next/script'
 builder.init(builderConfig.apiKey)
 
 export default function MyApp({ Component, pageProps }: AppProps) {
+
   return (
     <ChakraProvider theme={theme}>
       <Head>
