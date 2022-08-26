@@ -6,7 +6,7 @@ export default function VideoHero(props) {
     return (
         <Box>
             <Box pos="relative" h="100%" pt={["104px", null, null, "0"]} pb={["48px", null, null, "0"]}>
-                <Flex pos={["relative",null, null,"absolute"]} top="0" right="0" left="0" bottom="0" zIndex={5} m={["0","auto"]} px="20px" h="max-content" w={["100%","80%"]} justify="space-between" alignItems="center" flexDirection={["column", null, null, "row"]}>
+                <Flex pos={["relative",null, null,"absolute"]} top="0" right="0" left="0" bottom="0" zIndex={5} m={["0","auto"]} px="20px" h="max-content" w={["100%","80%"]} justify="space-between" alignItems="center" flexDirection={["column", null, null, "row"]} id="booking-form">
                     <Stack maxW={["100%", null, null, "50%"]} textAlign={["center", "left"]} spacing="24px">
                         <Heading color="#fff" as="h1" size="3xl" lineHeight="125%" textAlign={["left"]} fontFamily="Cadiz SemiBold" fontWeight="700" fontStyle="italic">Your Exclusive Offer</Heading>
                         <Text color="#fff" fontSize="14px" display={["none", "block"]}>Heyday® is more than a facial. It’s a journey of self-discovery – measured in lorem, championed by the community, and fueled by the desire to lorem ipsum dolor blah. BOOK NOW & GET YOUR FIRST FACIAL HALF OFF at participating locations.</Text>
@@ -20,7 +20,7 @@ export default function VideoHero(props) {
                             <Text fontFamily="Cadiz SemiBold" color="#105368">Plymouth Meeting</Text>
                         </Flex>
                         <form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" target="_blank" noValidate="novalidate">
-                            <Stack spacing="16px" alignItems="center" id="booking-form">
+                            <Stack spacing="16px" alignItems="center">
                                 <input type="hidden" name="g" value="SfKajh" />
                                 <input type="hidden" name="$list_fields" value="$consent" />
                                 <input type="hidden" name="$fields" value="first_name, last_name, phone, zip_code" />

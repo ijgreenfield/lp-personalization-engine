@@ -1,3 +1,4 @@
+import { Link } from "@chakra-ui/react";
 import { Center, Container, Heading, Box, Button, Stack, Text } from "@chakra-ui/react";
 
 
@@ -15,7 +16,9 @@ export default function CTASection(props) {
                         <Heading fontWeight={500}>{props.Heading}</Heading>
                         {props.Subtext && <Text>{props.Subtext}</Text>}
                         <Box textAlign='center'>
-                            <Button variant='primary' onClick={openForm} fontSize="16px">Book Your Facial</Button>
+                            <Link href="#booking-form" textDecoration="none">
+                                <Button variant='primary' onClick={openForm} fontSize="16px">Book Your Facial</Button>
+                            </Link>
                         </Box>
                     </Stack>
                 </Center>
