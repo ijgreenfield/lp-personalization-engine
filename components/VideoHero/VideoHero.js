@@ -1,4 +1,4 @@
-import { AspectRatio, Box, Flex, Heading, Input, Stack, Text, Button, Icon, HStack } from "@chakra-ui/react"
+import {  Box, Flex, Heading, Input, Stack, Text, Button, Icon } from "@chakra-ui/react"
 import Image from "next/image"
 import { MdLocationPin } from "react-icons/md";
 
