@@ -9,7 +9,6 @@ import DefaultErrorPage from 'next/error'
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 import { PersonalizedURL } from '@builder.io/personalization-utils'
 import { useEffect } from 'react'
-import '@builder.io/widgets/dist/lib/builder-widgets-async'
 
 builder.init(builderConfig.apiKey)
 

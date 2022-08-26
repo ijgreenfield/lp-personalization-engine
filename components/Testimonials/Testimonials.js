@@ -1,4 +1,4 @@
-import { Box, Container, Center, Heading, Stack, StylesProvider } from "@chakra-ui/react"
+import { Box, Center, Heading, Stack, StylesProvider } from "@chakra-ui/react"
 import Testimonial from "./Testimonial"
 import clients1 from "./clientReviews"
 
