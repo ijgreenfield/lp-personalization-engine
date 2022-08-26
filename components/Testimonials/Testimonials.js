@@ -1,7 +1,6 @@
 import { Box, Container, Center, Heading, Stack, StylesProvider } from "@chakra-ui/react"
 import Testimonial from "./Testimonial"
 import clients1 from "./clientReviews"
-import styles from './Testimonials.module.css'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -20,7 +19,6 @@ export default function Testimnonials() {
                         slidesPerView={2.5}
                         spaceBetween={10}
                         pagination={true}
-                        className={styles.swiperTop}
                         loop="true"
                         breakpoints={{
                             300: {
@@ -45,7 +43,6 @@ export default function Testimnonials() {
                     <Swiper
                         slidesPerView={2.5}
                         spaceBetween={10}
-                        className={styles.swiperBottom}
                         loop="true"
                     >
                         {clients1.map((client) => (
