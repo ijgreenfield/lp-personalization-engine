@@ -18,7 +18,6 @@ import "../components/ThreeColumn/ThreeColumn.builder"
 import "../components/VideoHero/VideoHero.builder"
 import "../components/FormHero/FormHero.builder"
 import "../components/AnnouncementBar/AnnouncementBar.builder"
-import { GoogleAnalytics } from "nextjs-google-analytics";
 
 
 builder.init(builderConfig.apiKey)

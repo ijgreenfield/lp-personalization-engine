@@ -17,6 +17,7 @@ export default function ThreeColumn(props) {
                                     src={props.Img1}
                                     layout="fill"
                                     objectFit="cover"
+                                    priority
                                 />
                             </Box>
                             <Heading as='h3' fontSize='24px' fontWeight={500} textAlign="center" mt='16px' px='24px'>Tell us about your skincare goals.</Heading>
