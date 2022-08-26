@@ -19,7 +19,8 @@ export default function VideoHero(props) {
                             <Icon as={MdLocationPin} h={8} w={8} color="#105368"/>
                             <Text fontFamily="Cadiz SemiBold" color="#105368">Plymouth Meeting</Text>
                         </Flex>
-                        <form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" target="_blank" noValidate="novalidate">
+                        <div className="klaviyo-form-SHBX3c"></div>
+                        {/*<form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" target="_blank" noValidate="novalidate">
                             <Stack spacing="16px" alignItems="center">
                                 <input type="hidden" name="g" value="SfKajh" />
                                 <input type="hidden" name="$list_fields" value="$consent" />
@@ -32,7 +33,7 @@ export default function VideoHero(props) {
                                 <Text fontSize="12px" textAlign="left">I agree to receive marketing text messages from Heyday Skincare at the number provided. Consent is not a condition of any purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel. View our Privacy Policy & Terms of Use.</Text>
                                 <Button variant="primary" mx="auto" type="submit">Book Your Facial</Button>
                             </Stack>
-                        </form>
+                        </form>*/}
                         <script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script> 
                     </Stack>
                     <Text color="#fff" fontSize="14px" display={["none", "none"]}>Heyday® is more than a facial. It’s a journey of self-discovery – measured in lorem, championed by the community, and fueled by the desire to lorem ipsum dolor blah. BOOK NOW & GET YOUR FIRST FACIAL HALF OFF at participating locations.</Text>
