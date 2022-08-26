@@ -32,6 +32,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <link rel="icon" href="/static/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Heyday Skincare Offers</title>
       </Head>
       <Fonts />
       <Component {...pageProps} />
