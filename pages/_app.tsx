@@ -44,11 +44,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             fbq('track', 'PageView');
           `}
         </Script>
-        <noscript>
-        <img height="1" width="1" 
-        src="https://www.facebook.com/tr?id=1026552650761735&ev=PageView
-        &noscript=1"/>
-        </noscript>
       </Head>
       <Component {...pageProps} />
       <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB"></script>
