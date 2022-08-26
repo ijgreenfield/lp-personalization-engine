@@ -27,6 +27,12 @@ const Fonts = () => (
           font-display: swap;
           src: url('https://cdn.shopify.com/s/files/1/1704/8471/t/491/assets/Cadiz-SemiBold.woff2?v=136676191587467238541661245696');
         }
+        @font-face {
+          font-family: 'Inter';
+          font-style: normal;
+          font-display: swap;
+          src: url('https://rsms.me/inter/inter.css');
+        }
         `}
     />
   )
