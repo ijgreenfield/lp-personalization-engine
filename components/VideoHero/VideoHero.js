@@ -1,5 +1,6 @@
-import { AspectRatio, Box, Flex, Heading, Input, Stack, Text, Button } from "@chakra-ui/react"
+import { AspectRatio, Box, Flex, Heading, Input, Stack, Text, Button, Icon, HStack } from "@chakra-ui/react"
 import Image from "next/image"
+import { MdLocationPin } from "react-icons/md";
 
 export default function VideoHero(props) {
     return (
@@ -14,9 +15,10 @@ export default function VideoHero(props) {
                         <Box>
                             <Heading as="h3" size="md" fontFamily="Cadiz SemiBold" textTransform="uppercase">50% Off Your First Facial</Heading>
                         </Box>
-                        <Box>
-                            <Text>Plymouth Meeting</Text>
-                        </Box>
+                        <Flex alignItems="center" justifyContent="center">
+                            <Icon as={MdLocationPin} h={8} w={8} color="#105368"/>
+                            <Text fontFamily="Cadiz SemiBold" color="#105368">Plymouth Meeting</Text>
+                        </Flex>
                         <Stack spacing="16px" alignItems="center" id="booking-form">
                             <Input placeholder="First Name*" size="lg" display={["none", "block"]}/>
                             <Input placeholder="Last Name*" size="lg" display={["none", "block"]}/>
