@@ -19,6 +19,7 @@ import "../components/ThreeColumn/ThreeColumn.builder"
 import "../components/VideoHero/VideoHero.builder"
 import "../components/FormHero/FormHero.builder"
 import Script from 'next/script'
+import FacebookPixel from '@components/FacebookPixel'
 //import "../components/AnnouncementBar/AnnouncementBar.builder"
 
 
@@ -33,6 +34,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/static/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-42488621-18"></Script>
+        <FacebookPixel />
       </Head>
       <Component {...pageProps} />
       <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB"></script>
