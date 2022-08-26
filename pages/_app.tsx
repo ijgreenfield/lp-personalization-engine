@@ -18,6 +18,7 @@ import "../components/ThreeColumn/ThreeColumn.builder"
 import "../components/VideoHero/VideoHero.builder"
 import "../components/FormHero/FormHero.builder"
 import Script from 'next/script'
+import Fonts from '@assets/styles/Fonts'
 //import "../components/AnnouncementBar/AnnouncementBar.builder"
 
 
@@ -31,10 +32,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <link rel="icon" href="/static/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-42488621-18"></Script>
-        <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB"></script>
       </Head>
+      <Fonts />
       <Component {...pageProps} />
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-42488621-18"></Script>
+      <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB"></script>
       <script dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
