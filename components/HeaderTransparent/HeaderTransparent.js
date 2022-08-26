@@ -1,4 +1,5 @@
-import { Container, Flex, Image, Spacer, Box, Button } from "@chakra-ui/react";
+import { Container, Flex, Spacer, Box, Button } from "@chakra-ui/react";
+import Image from "next/image";
 
 export default function HeaderTransparent() {
     return (
@@ -7,8 +8,9 @@ export default function HeaderTransparent() {
                 <Flex alignItems="center" py="16px" textAlign="center">
                     <Image 
                         src="https://cdn.shopify.com/s/files/1/1704/8471/files/logo-white.png?v=1660850039"
-                        height="50px"
-                        mx="auto"
+                        layout="responsive"
+                        height={50}
+                        width={100}
                     />
                 </Flex>
             </Container>

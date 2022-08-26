@@ -17,7 +17,6 @@ export default function ThreeColumn(props) {
                                     src={props.Img1}
                                     layout="fill"
                                     objectFit="cover"
-                                    unoptimized="true"
                                 />
                             </Box>
                             <Heading as='h3' fontSize='24px' fontWeight={500} textAlign="center" mt='16px' px='24px'>Tell us about your skincare goals.</Heading>
@@ -28,7 +27,6 @@ export default function ThreeColumn(props) {
                                     src={props.Img2}
                                     layout="fill"
                                     objectFit="cover"
-                                    unoptimized="true"
                                 />
                             </Box>
                             <Heading as='h3' fontSize='24px' fontWeight={500} textAlign="center" mt='16px' px='24px'>Enjoy a personalized, 50-minute treatment.</Heading>
@@ -39,7 +37,6 @@ export default function ThreeColumn(props) {
                                     src={props.Img3}
                                     layout="fill"
                                     objectFit="cover"
-                                    unoptimized="true"
                                 />
                             </Box>
                             <Heading as='h3' fontSize='24px' fontWeight={500} textAlign="center" mt='16px' px='24px'>Learn how to enhance your daily routine.</Heading>
