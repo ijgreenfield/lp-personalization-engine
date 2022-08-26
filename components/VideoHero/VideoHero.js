@@ -20,6 +20,7 @@ export default function VideoHero(props) {
                             <Text fontFamily="Cadiz SemiBold" color="#105368">Plymouth Meeting</Text>
                         </Flex>
                         <Stack spacing="16px" alignItems="center" id="booking-form">
+                            <div className="klaviyo-form-W289nu"></div>
                             <Input placeholder="First Name*" size="lg" display={["none", "block"]}/>
                             <Input placeholder="Last Name*" size="lg" display={["none", "block"]}/>
                             <Input placeholder="Email*" size="lg"/>
