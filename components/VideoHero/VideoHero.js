@@ -6,7 +6,7 @@ export default function VideoHero(props) {
     return (
         <Box>
             <Box pos="relative" h="100%" pt={["104px", null, null, "0px"]} pb={["48px", null, null, "0"]}>
-                <Flex pos={["relative",null, null,"absolute"]} top="0" right="0" left="0" bottom="0" zIndex={5} m={["0","auto"]} px="20px" h="max-content" w={["100%","80%"]} justify="space-between" alignItems="center" flexDirection={["column", null, null, "row"]} id="booking-form" maxH={[null, null, "70%"]}>
+                <Flex pos={["relative",null, null,"absolute"]} top="0" right="0" left="0" bottom="0" zIndex={5} m={["0","auto"]} px="20px" h="max-content" w={["100%","80%"]} justify="space-between" alignItems="center" flexDirection={["column", null, null, "row"]} id="booking-form" maxH={[null, null, "70%"]} maxW="1280px">
                     <Stack maxW={["100%", null, '50%', "50%"]} textAlign={["center", "left"]} spacing="24px">
                         <Heading color="#fff" as="h1" size="3xl" lineHeight="125%" textAlign={["left"]} fontFamily="Cadiz SemiBold" fontWeight="700" fontStyle="italic">{props.title}</Heading>
                         <Text color="#fff" fontSize={["14px", "16px"]} display={["none", "block"]}>{props.description}</Text>
