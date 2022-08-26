@@ -19,7 +19,7 @@ export default function VideoHero(props) {
                             <Icon as={MdLocationPin} h={8} w={8} color="#105368"/>
                             <Text fontFamily="Cadiz SemiBold" color="#105368">Plymouth Meeting</Text>
                         </Flex>
-                        <form action="//manage.kmail-lists.com/subscriptions/subscribe" method="GET" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" target="_blank" novalidate="novalidate">
+                        <form action="//manage.kmail-lists.com/subscriptions/subscribe" method="GET" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" target="_blank" noValidate="novalidate">
                             <Stack spacing="16px" alignItems="center" id="booking-form">
                                 <input type="hidden" name="g" value="SfKajh" />
                                 <input type="hidden" name="$list_fields" value="$consent" />
