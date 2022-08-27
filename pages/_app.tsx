@@ -33,7 +33,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/static/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Heyday Skincare Offers</title>
-        <Script strategy="beforeInteractive" type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB" />
         <Script id="google-analytics" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
@@ -57,6 +56,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <noscript dangerouslySetInnerHTML={{ __html: `<img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=1026552650761735&ev=PageView&noscript=1" />` }}
     />
+    <Script strategy="beforeInteractive" type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB" />
       </Head>
       <Fonts />
       <Component {...pageProps} />
