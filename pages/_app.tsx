@@ -33,10 +33,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/static/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Heyday Skincare Offers</title>
-      </Head>
-      <Fonts />
-      <Component {...pageProps} />
-      <Script id="google-analytics" strategy="afterInteractive">
+        <Script strategy="lazyOnload" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB" />
+        <Script id="google-analytics" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
@@ -45,7 +43,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           gtag('config', 'UA-42488621-18');
         `}
       </Script>
-      <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB"></script>
+      </Head>
+      <Fonts />
+      <Component {...pageProps} />
       <script dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
