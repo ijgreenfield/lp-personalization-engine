@@ -36,7 +36,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <Fonts />
       <Component {...pageProps} />
-      <Script async strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=UA-42488621-18"></Script>
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
