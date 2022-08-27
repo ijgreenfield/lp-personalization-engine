@@ -56,8 +56,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <noscript dangerouslySetInnerHTML={{ __html: `<img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=1026552650761735&ev=PageView&noscript=1" />` }}
     />
-    <Script strategy="beforeInteractive" type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB" />
-      </Head>
+    </Head>
+    <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=API_KEY"></script>
       <Fonts />
       <Component {...pageProps} />
     </ChakraProvider>
