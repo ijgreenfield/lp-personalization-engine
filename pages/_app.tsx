@@ -42,11 +42,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
           gtag('config', 'UA-42488621-18');
         `}
-      </Script>
-      </Head>
-      <Fonts />
-      <Component {...pageProps} />
-      <script dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s)
+        </Script>
+        <Script strategy="lazyOnload" dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
       if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
@@ -60,6 +57,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <noscript dangerouslySetInnerHTML={{ __html: `<img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=1026552650761735&ev=PageView&noscript=1" />` }}
     />
+      </Head>
+      <Fonts />
+      <Component {...pageProps} />
     </ChakraProvider>
   )
 }
