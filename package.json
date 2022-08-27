@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@builder.io/admin-sdk": "^0.1.0",
-    "@builder.io/personalization-context-menu": "^0.0.3",
     "@builder.io/personalization-utils": "^1.0.4",
     "@builder.io/react": "2.0.2-7",
     "@chakra-ui/react": "^2.2.9",
@@ -24,8 +23,6 @@
     "swiper": "^8.3.2"
   },
   "devDependencies": {
-    "@netlify/functions": "^1.0.0",
-    "@netlify/plugin-nextjs": "^4.7.0",
     "@types/react": "^18.0.15",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.7.2",
