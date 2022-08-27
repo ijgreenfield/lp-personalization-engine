@@ -33,7 +33,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/static/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Heyday Skincare Offers</title>
-        <Script id="google-analytics" strategy="lazyOnload">
+      </Head>
+      <Fonts />
+      <Component {...pageProps} />
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
@@ -41,8 +44,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
           gtag('config', 'UA-42488621-18');
         `}
-        </Script>
-        <Script strategy="lazyOnload" dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s)
+      </Script>
+      <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB"></script>
+      <script dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
       if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
@@ -56,10 +60,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <noscript dangerouslySetInnerHTML={{ __html: `<img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=1026552650761735&ev=PageView&noscript=1" />` }}
     />
-    </Head>
-    <script type="text/javascript" async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=API_KEY"></script>
-      <Fonts />
-      <Component {...pageProps} />
     </ChakraProvider>
   )
 }
