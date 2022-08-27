@@ -33,7 +33,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/static/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Heyday Skincare Offers</title>
-        <Script strategy="lazyOnload" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB" />
+        <Script strategy="beforeInteractive" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB" />
         <Script id="google-analytics" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
