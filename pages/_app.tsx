@@ -3,7 +3,6 @@ import { builder } from '@builder.io/react'
 import builderConfig from '../config/builder'
 import '../assets/index.css'
 import { ChakraProvider } from '@chakra-ui/react'
-//import Fonts from '@assets/styles/Fonts'
 import Head from 'next/head'
 import theme from '../assets/styles/theme'
 import "../components/CtaSection/CtaSection.builder"
@@ -17,10 +16,9 @@ import "../components/Testimonials/Testimonials.builder"
 import "../components/ThreeColumn/ThreeColumn.builder"
 import "../components/VideoHero/VideoHero.builder"
 import "../components/FormHero/FormHero.builder"
+import "../components/ColumnHero/ColumnHero.builder"
 import Script from 'next/script'
 import Fonts from '@assets/styles/Fonts'
-//import "../components/AnnouncementBar/AnnouncementBar.builder"
-
 
 
 builder.init(builderConfig.apiKey)
