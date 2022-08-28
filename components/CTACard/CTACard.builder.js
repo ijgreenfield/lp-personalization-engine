@@ -7,4 +7,11 @@ const LazyCTACard = dynamic(async () => {
 
 Builder.registerComponent(LazyCTACard, {
     name: 'CTA Card',
+    inputs: [
+        { name: 'bgColor', type: 'string' },
+        { name: 'heading', type: 'string' },
+        { name: 'span', type: 'string' },
+        { name: 'description', type: 'string' },
+        { name: 'cta', type: 'string' },
+    ]
 })
