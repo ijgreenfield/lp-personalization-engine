@@ -18,6 +18,7 @@ import "../components/VideoHero/VideoHero.builder"
 import "../components/FormHero/FormHero.builder"
 import "../components/ColumnHero/ColumnHero.builder"
 import "../components/ThreeColumnCards/ThreeColumnCards.builder"
+import "../components/CTACard/CTACard.builder"
 import Script from 'next/script'
 import Fonts from '@assets/styles/Fonts'
 
