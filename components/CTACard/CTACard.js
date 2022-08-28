@@ -5,7 +5,7 @@ export default function CTACard(props) {
     return (
         <Box bg={props.bgColor}>
             <Container>
-                <Flex borderRadius="24px" overflow="hidden" flexDir="column">
+                <Flex borderRadius="24px" overflow="hidden" flexDir="column" bgColor="#fff">
                     <Box>
                         <Image 
                             src="https://cdn.shopify.com/s/files/1/1704/8471/files/Recess_HeyDay-66_1.png?v=1659042552"

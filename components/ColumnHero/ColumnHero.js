@@ -1,12 +1,19 @@
 import { Heading, Text, Stack, Box, Container, Flex, Button } from "@chakra-ui/react"
+import Image from "next/image"
 
 export default function ColumnHero() {
     return (
         <Box>
             <Container>
-                <Flex bg="#F7EBE3" borderRadius="24px" overflow="hidden">
+                <Flex bg="#F7EBE3" borderRadius="24px" overflow="hidden" flexDir="column">
                     <Box>
-                        
+                        <Image 
+                            src="https://cdn.shopify.com/s/files/1/1704/8471/files/Recess_HeyDay-66_1.png?v=1659042552"
+                            layout="responsive"
+                            width={330}
+                            height={200}
+                            unoptimized
+                        />
                     </Box>
                     <Stack p="20px">
                         <Heading>Member Appreciation Month Is Here.</Heading>
