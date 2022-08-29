@@ -12,11 +12,12 @@ export default function ColumnHero(props) {
                             layout="responsive"
                             width={500}
                             height={400}
+                            unoptimized
                             priority
                         />
                     </Box>
-                    <Stack px={["20px", null, null, "64px"]} py={["20px"]} w={["100%", null, null, "50%"]} spacing="16px">
-                        <Heading fontSize={["32px", '40px', null, "56px"]}>{props.Heading}</Heading>
+                    <Stack px={["20px", null, "40px", "64px"]} py={["20px"]} w={["100%", null, null, "50%"]} spacing="16px">
+                        <Heading fontSize={["32px", null, null, null, "56px"]}>{props.Heading}</Heading>
                         <Text fontSize={[null, null, "24px"]}>{props.Subheading}</Text>
                         <Text>{props.Description}</Text>
                         <Button variant="primary">{props.CTA}</Button>
