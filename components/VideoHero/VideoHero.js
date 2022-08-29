@@ -17,6 +17,9 @@ export default function VideoHero(props) {
                         <Box>
                             <Heading as="h3" size="lg" fontFamily="Cadiz SemiBold" textTransform={["uppercase", "none"]}>{props.formHeading}</Heading>
                         </Box>
+                        <Box>
+                            <Text>{props.subtitle}</Text>
+                        </Box>
                         <Flex alignItems="center" justifyContent="center" mb="20px">
                             <Icon as={MdLocationPin} h={8} w={8} color="#105368"/>
                             <Text fontFamily="Cadiz SemiBold" color="#105368">{props.location}</Text>

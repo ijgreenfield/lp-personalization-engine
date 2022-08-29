@@ -8,6 +8,7 @@ const LazyVideoHero = dynamic(async () => {
 Builder.registerComponent(LazyVideoHero, {
   name: 'VideoHero',
   inputs: [{ name: 'title', type: 'text' }, 
+  { name: 'subtitle', type: 'string'},
   { name: 'description', type: 'text'},
   { name: 'location', type: 'string'},
   { name: 'form_id', type: 'string'},
