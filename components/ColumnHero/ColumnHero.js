@@ -16,7 +16,7 @@ export default function ColumnHero(props) {
                         />
                     </Box>
                     <Stack px={["20px", null, null, "64px"]} py={["20px"]} w={["100%", null, null, "50%"]} spacing="16px">
-                        <Heading fontSize={["32px", null, "56px"]}>{props.Heading}</Heading>
+                        <Heading fontSize={["32px", '40px', null, "56px"]}>{props.Heading}</Heading>
                         <Text fontSize={[null, null, "24px"]}>{props.Subheading}</Text>
                         <Text>{props.Description}</Text>
                         <Button variant="primary">{props.CTA}</Button>

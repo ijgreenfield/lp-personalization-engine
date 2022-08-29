@@ -33,9 +33,9 @@ export default function ThreeColumnCards() {
                     <Box mb="16px">
                         <Heading>Our September Offers</Heading>
                     </Box>
-                    <Flex flexDir={["column", null, null, "row"]} justifyContent="space-between">
+                    <Flex flexDir={["column", null, "row"]} justifyContent="space-between">
                         {offers.map(offer => (
-                            <Box offer={offer} borderRadius="24px" overflow="hidden" bg="#F7EBE3" mb={["20px"]} w={["100%", null, null, "31%"]}>
+                            <Box offer={offer} borderRadius="24px" overflow="hidden" bg="#F7EBE3" mb={["20px"]} w={["100%", null, "31%"]}>
                                 <Box>
                                     <Image 
                                         src={offer.image}
