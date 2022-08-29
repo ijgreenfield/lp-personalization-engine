@@ -20,7 +20,7 @@ export default function ColumnHero(props) {
                         <Heading fontSize={["32px", null, null, null, "56px"]}>{props.Heading}</Heading>
                         <Text fontSize={[null, null, "24px"]}>{props.Subheading}</Text>
                         <Text>{props.Description}</Text>
-                        <Link href={href}>
+                        <Link href={props.href}>
                             <Button variant="primary">{props.CTA}</Button>
                         </Link>
                     </Stack>
