@@ -12,7 +12,6 @@ export default function CTACard(props) {
                             layout="responsive"
                             width={650}
                             height={400}
-                            unoptimized
                         />
                     </Box>
                     <Stack p={["20px", null, null, "64px"]} w={["100%", null, null, "50%"]} spacing="16px">

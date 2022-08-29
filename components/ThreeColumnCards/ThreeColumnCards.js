@@ -40,7 +40,6 @@ export default function ThreeColumnCards() {
                                         layout="responsive"
                                         width={300}
                                         height={175}
-                                        unoptimized
                                     />
                                 </Box>
                                 <Stack textAlign="left" spacing="16px" p="20px">

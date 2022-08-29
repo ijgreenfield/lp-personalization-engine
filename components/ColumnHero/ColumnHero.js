@@ -12,7 +12,7 @@ export default function ColumnHero(props) {
                             layout="responsive"
                             width={500}
                             height={400}
-                            unoptimized
+                            priority
                         />
                     </Box>
                     <Stack px={["20px", null, null, "64px"]} py={["20px"]} w={["100%", null, null, "50%"]} spacing="16px">
