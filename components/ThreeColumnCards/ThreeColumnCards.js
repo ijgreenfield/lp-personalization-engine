@@ -41,7 +41,8 @@ export default function ThreeColumnCards() {
                                         src={offer.image}
                                         layout="responsive"
                                         width={300}
-                                        height={175}
+                                        height={225}
+                                        unoptimized
                                     />
                                 </Box>
                                 <Stack textAlign="left" spacing="16px" p="20px">
