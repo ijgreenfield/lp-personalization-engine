@@ -8,10 +8,10 @@ export default function CTACard(props) {
                 <Flex borderRadius="24px" overflow="hidden" flexDir={["column", null, null, "row-reverse"]} bgColor="#fff" alignItems="center" justifyContent="center">
                     <Box w={["100%", null, null, "50%"]}>
                         <Image 
-                            src="https://cdn.shopify.com/s/files/1/1704/8471/files/Recess_HeyDay-66_1.png?v=1659042552"
+                            src="https://cdn.shopify.com/s/files/1/1704/8471/files/Screen_Shot_2022-08-24_at_9.45_1.png?v=1661783661"
                             layout="responsive"
-                            width={330}
-                            height={200}
+                            width={650}
+                            height={400}
                             unoptimized
                         />
                     </Box>

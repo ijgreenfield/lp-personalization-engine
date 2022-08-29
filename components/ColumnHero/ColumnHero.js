@@ -8,7 +8,7 @@ export default function ColumnHero(props) {
                 <Flex bg="#F7EBE3" borderRadius="24px" overflow="hidden" flexDir={["column", null, "row"]} justifyContent="center" alignItems="center">
                     <Box w={["100%", null, null, "50%"]} h="100%" pos="relative">
                         <Image 
-                            src="https://cdn.shopify.com/s/files/1/1704/8471/files/Recess_HeyDay-66_1.png?v=1659042552"
+                            src="https://cdn.shopify.com/s/files/1/1704/8471/files/Anjelika_Frye_Mariah_Tabb_Nadia_Blocker__Look_03_088_1_4789fb05-3237-427b-be32-d6b0342aabe6.png?v=1661783592"
                             layout="responsive"
                             width={500}
                             height={400}
