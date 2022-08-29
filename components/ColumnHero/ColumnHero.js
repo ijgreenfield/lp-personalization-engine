@@ -1,4 +1,4 @@
-import { Heading, Text, Stack, Box, Container, Flex, Button } from "@chakra-ui/react"
+import { Heading, Text, Stack, Box, Container, Flex, Button, Link } from "@chakra-ui/react"
 import Image from "next/image"
 
 export default function ColumnHero(props) {
@@ -20,7 +20,9 @@ export default function ColumnHero(props) {
                         <Heading fontSize={["32px", null, null, null, "56px"]}>{props.Heading}</Heading>
                         <Text fontSize={[null, null, "24px"]}>{props.Subheading}</Text>
                         <Text>{props.Description}</Text>
-                        <Button variant="primary">{props.CTA}</Button>
+                        <Link href={href}>
+                            <Button variant="primary">{props.CTA}</Button>
+                        </Link>
                     </Stack>
                 </Flex>
             </Container>

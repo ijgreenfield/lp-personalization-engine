@@ -11,6 +11,7 @@ Builder.registerComponent(LazyColumnHero, {
       { name: 'Heading', type: 'string'},
       { name: 'Subheading', type: 'string'},
       { name: 'Description', type: 'string'},
-      { name: 'CTA', type: 'string'}
+      { name: 'CTA', type: 'string'},
+      { name: 'href', type: 'string'}
     ]
 })
