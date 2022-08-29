@@ -40,6 +40,7 @@ export default function middleware(request: NextRequest) {
         ...getUserAttributes({ ...allCookies, ...query }),
         city: request.geo?.city || '',
         queryParam: query.shop || '',
+        member: query.member || '',
       }
       
     })
