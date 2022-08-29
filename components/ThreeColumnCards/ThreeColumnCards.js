@@ -26,14 +26,14 @@ const offers = [
 export default function ThreeColumnCards() {
     return (
         <Box>
-            <Container>
+            <Container maxW="1280px">
                 <Stack textAlign="center">
                     <Box>
                         <Heading>Our September Offers</Heading>
                     </Box>
-                    <Flex flexDir="column" justifyContent="space-between">
+                    <Flex flexDir={["column", null, null, "row"]} justifyContent="space-between">
                         {offers.map(offer => (
-                            <Box offer={offer} borderRadius="24px" overflow="hidden" bg="#F7EBE3" mb={["20px"]}>
+                            <Box offer={offer} borderRadius="24px" overflow="hidden" bg="#F7EBE3" mb={["20px"]} w={["100%", null, null, "32%"]}>
                                 <Box>
                                     <Image 
                                         src={offer.image}
