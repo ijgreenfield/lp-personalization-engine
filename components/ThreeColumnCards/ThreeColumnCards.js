@@ -28,7 +28,7 @@ export default function ThreeColumnCards() {
         <Box>
             <Container maxW="1280px">
                 <Stack textAlign="center">
-                    <Box>
+                    <Box mb="16px">
                         <Heading>Our September Offers</Heading>
                     </Box>
                     <Flex flexDir={["column", null, null, "row"]} justifyContent="space-between">
@@ -44,7 +44,7 @@ export default function ThreeColumnCards() {
                                     />
                                 </Box>
                                 <Stack textAlign="left" spacing="16px" p="20px">
-                                    <Heading>{offer.headling}</Heading>
+                                    <Heading as="h3" fontSize="24px">{offer.headling}</Heading>
                                     <Text>{offer.description}</Text>
                                     <Link href="/">{offer.cta}</Link>
                                 </Stack>

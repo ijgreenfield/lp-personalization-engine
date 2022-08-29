@@ -1,7 +1,7 @@
 import { Heading, Text, Stack, Box, Container, Flex, Button } from "@chakra-ui/react"
 import Image from "next/image"
 
-export default function ColumnHero() {
+export default function ColumnHero(props) {
     return (
         <Box>
             <Container maxW="1280px">
@@ -15,11 +15,11 @@ export default function ColumnHero() {
                             unoptimized
                         />
                     </Box>
-                    <Stack p={["20px", null, null, "64px"]} w={["100%", null, null, "50%"]}>
-                        <Heading mb={[null, null, null, "16px"]}>Member Appreciation Month Is Here.</Heading>
-                        <Text>The best time to be a member? Right now.</Text>
-                        <Text mb={[null, null, null, "16px"]}>We’re celebrating members with early access to enhancements, extra-special product discounts, gifts for you and your friends & so much more! Scroll to see what’s coming your way in September. </Text>
-                        <Button variant="primary">Book a Facial</Button>
+                    <Stack px={["20px", null, null, "64px"]} py={["20px"]} w={["100%", null, null, "50%"]} spacing="16px">
+                        <Heading fontSize={["32px", null, "56px"]}>{props.heading}</Heading>
+                        <Text fontSize={[null, null, "24px"]}>{props.subheading}</Text>
+                        <Text>{props.description}</Text>
+                        <Button variant="primary">{props.cta}</Button>
                     </Stack>
                 </Flex>
             </Container>

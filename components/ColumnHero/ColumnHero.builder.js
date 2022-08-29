@@ -7,4 +7,10 @@ const LazyColumnHero = dynamic(async () => {
 
 Builder.registerComponent(LazyColumnHero, {
     name: 'Column Hero',
+    inputs: [
+      { name: 'Heading', type: 'string'},
+      { name: 'Subheading', type: 'string'},
+      { name: 'Description', type: 'string'},
+      { name: 'CTA', type: 'string'}
+    ]
 })

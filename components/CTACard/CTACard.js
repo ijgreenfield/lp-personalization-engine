@@ -15,9 +15,8 @@ export default function CTACard(props) {
                             unoptimized
                         />
                     </Box>
-                    <Stack p="20px" w={["100%", null, null, "50%"]}>
+                    <Stack p={["20px", null, null, "64px"]} w={["100%", null, null, "50%"]} spacing="16px">
                         <Heading>Member Appreciation Month Is Here.</Heading>
-                        <Text>The best time to be a member? Right now.</Text>
                         <Text>We’re celebrating members with early access to enhancements, extra-special product discounts, gifts for you and your friends & so much more! Scroll to see what’s coming your way in September. </Text>
                         <Button variant="primary">Book a Facial</Button>
                     </Stack>
