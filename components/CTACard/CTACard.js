@@ -17,7 +17,9 @@ export default function CTACard(props) {
                     <Stack p={["20px", null, null, "64px"]} w={["100%", null, "50%"]} spacing="16px">
                         <Heading>{props.heading}</Heading>
                         <Text>{props.description}</Text>
-                        <Button variant="primary">{props.cta}</Button>
+                        <Link href={props.href}>
+                            <Button variant="primary">{props.cta}</Button>
+                        </Link>
                     </Stack>
                 </Flex>
             </Container>
