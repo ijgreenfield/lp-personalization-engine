@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app'
+import { GoogleAnalytics } from "nextjs-google-analytics";
 import { builder } from '@builder.io/react'
 import builderConfig from '../config/builder'
 import '../assets/index.css'
@@ -34,6 +35,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <title>Heyday Skincare Offers</title>
       </Head>
       <Fonts />
+      <GoogleAnalytics trackPageViews />
       <Component {...pageProps} />
       <Script id="google-analytics" strategy="beforeInteractive">
         {`
