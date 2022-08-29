@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Stack, Button, Text, Heading } from "@chakra-ui/react"
+import { Box, Container, Flex, Stack, Button, Text, Heading, Link } from "@chakra-ui/react"
 import Image from "next/image"
 
 export default function CTACard(props) {
