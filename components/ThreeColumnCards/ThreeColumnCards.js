@@ -5,7 +5,7 @@ const offers = [
     {
         image: 'https://cdn.shopify.com/s/files/1/1704/8471/files/Group_Look_03_073_1_1.png?v=1661783186',
         headling: 'The Gift of Giving',
-        description: 'Refer up to 3 friends for a free facial & receive a $25 gift card for each one! Let your friend know to use code MEMBERFRIENDCOMP when booking.',
+        description: 'Refer up to 3 friends for a free facial & receive a $25 gift card for each one! Let your friend know to use code TYHDM2598 when booking.',
         cta: 'Book a Facial',
         href: 'https://www.heydayskincare.com/#book-now'
     },
@@ -19,7 +19,7 @@ const offers = [
     {
         image: 'https://cdn.shopify.com/s/files/1/1704/8471/files/tyraBookerr_af661089-3980-441a-9272-1f158a1e586e.png?v=1661783489',
         headling: '25% Off Skincare Essentials',
-        description: 'On top of your usual 15% product discount, enjoy an extra 25% off purchases of $200 or more when you purchase products in shop or online!',
+        description: 'On top of your usual 15% product discount, enjoy 25% off purchases of $200 or more when you purchase products in shop or online!',
         cta: 'Shop New Arrivals',
         href: 'https://www.heydayskincare.com/collections/new'
     }
