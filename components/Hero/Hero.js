@@ -10,7 +10,7 @@ export default function HeroSection(props) {
 
 
     return (
-        <Box h={["300px","500px"]} w="100vw" pos="relative">
+        <Box h={["400px","500px"]} w="100vw" pos="relative">
             <Box pos="absolute" top="0" h="100%" w="100%" zIndex="2">
                 <Box pos="relative" h="100%" w="100%" zIndex="0">
                     <Image
@@ -23,7 +23,7 @@ export default function HeroSection(props) {
                 </Box>
             </Box>
             <Container zIndex="5" h="100%">
-                <Center alignItems="center" h="100%" flexDirection="column" textAlign="center">
+                <Center alignItems="center" h="100%" flexDirection="column" textAlign="center" py="32px">
                     <Heading zIndex="10" color="#fff">{props.Heading}</Heading>
                     <Text zIndex="10" color="#fff" my={5}>{props.Subtext}</Text>
                     <Button zIndex="10" variant='secondary' onClick={openForm} fontSize="16px">{props.Cta}</Button>
