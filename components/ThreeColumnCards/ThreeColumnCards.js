@@ -5,7 +5,7 @@ const offers = [
     {
         image: 'https://cdn.shopify.com/s/files/1/1704/8471/files/Group_Look_03_073_1_1.png?v=1661783186',
         headling: 'The Gift of Giving',
-        description: 'Refer up to 3 friends for a free facial & receive a $25 gift card for each one! Let your friend know to use code TYHDM2598 when booking.',
+        description: 'Refer up to 3 friends for a free facial & receive a $25 gift card for each one! Let your friend know to use code HDMEM922 when booking.',
         cta: 'Book a Facial',
         href: 'https://www.heydayskincare.com/#book-now'
     },
