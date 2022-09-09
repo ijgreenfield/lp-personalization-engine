@@ -6,6 +6,7 @@ export default function SMSHero() {
             <Container>
                 <Center>
                     <div class="klaviyo-form-TkPMKh"></div>
+                    <script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
                 </Center>
             </Container>
         </Box>
