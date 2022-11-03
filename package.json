@@ -10,16 +10,12 @@
   "dependencies": {
     "@builder.io/personalization-utils": "^1.0.4",
     "@builder.io/react": "2.0.2-7",
-    "@chakra-ui/react": "^2.2.9",
-    "@emotion/react": "^11.10.0",
-    "@emotion/styled": "^11.10.0",
+    "@emotion/react": "^11.10.5",
     "@next/bundle-analyzer": "^12.2.5",
-    "fast-glob": "^3.2.11",
     "next": "^12.2.2",
     "nextjs-google-analytics": "^2.1.0",
     "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "react-icons": "^4.4.0"
+    "react-dom": "18.1.0"
   },
   "devDependencies": {
     "@types/node": "^18.7.13",
