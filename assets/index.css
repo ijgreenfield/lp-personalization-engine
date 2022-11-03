@@ -4,11 +4,10 @@ body, html, * {
   font-family: 'Cadiz';
   font-weight: 500;
   box-sizing: border-box;
-  color: #353F47;
 }
 h1 {
   font-family: 'Tobias';
-  font-size: 48px;
+  font-size: 40px !important;
 }
 
 h2 {
