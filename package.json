@@ -8,10 +8,8 @@
     "prettier": "prettier"
   },
   "dependencies": {
-    "@builder.io/personalization-utils": "^1.0.4",
     "@builder.io/react": "^2.0.2-7",
     "@builder.io/widgets": "^1.2.23",
-    "@emotion/react": "^11.10.5",
     "@next/bundle-analyzer": "^12.2.5",
     "next": "^12.2.2",
     "nextjs-google-analytics": "^2.1.0",
