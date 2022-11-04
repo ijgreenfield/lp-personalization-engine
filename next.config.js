@@ -26,6 +26,10 @@ module.exports = withBundleAnalyzer({
     // expose env to the browser
     BUILDER_PUBLIC_KEY: process.env.BUILDER_PUBLIC_KEY,
   },
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
 
   images: {
     domains: ['cdn.shopify.com', 'images.unsplash.com', 'localhost'],
