@@ -2,8 +2,6 @@ import type { AppProps } from 'next/app'
 import { builder } from '@builder.io/react'
 import builderConfig from '../config/builder'
 import '../assets/index.css'
-import Head from 'next/head'
-import Script from 'next/script'
 import Fonts from '@assets/styles/Fonts'
 
 
@@ -13,13 +11,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Head>
-        <link rel="icon" href="/static/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Heyday Skincare Offers</title>
-      </Head>
-      <Fonts />
       <Component {...pageProps} />
+      <Fonts />
       {/*<script dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};

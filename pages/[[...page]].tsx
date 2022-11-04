@@ -1,6 +1,7 @@
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 import { useRouter } from 'next/router'
 import { BuilderComponent, builder, useIsPreviewing } from '@builder.io/react'
+import '@builder.io/widgets';
 import DefaultErrorPage from 'next/error'
 import Head from 'next/head'
 
@@ -61,6 +62,7 @@ export default function Page({
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Heyday Skincare Offers</title>
       </Head>
       
       <BuilderComponent model="page" content={page} />
