@@ -15,11 +15,13 @@
     "nextjs-google-analytics": "^2.1.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "react-facebook-pixel": "^1.0.4"
+    "react-facebook-pixel": "^1.0.4",
+    "react-gtm-module": "^2.0.11"
   },
   "devDependencies": {
     "@types/node": "^18.7.13",
     "@types/react": "^18.0.15",
+    "@types/react-gtm-module": "^2.0.1",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.7.2",
     "typescript": "^4.8.2"

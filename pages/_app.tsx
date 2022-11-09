@@ -9,8 +9,8 @@ import { useRouter } from 'next/router'
 
 builder.init(builderConfig.apiKey)
 
-export default function MyApp({ Component, pageProps }: AppProps) {
 
+export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
   useEffect(() => {
@@ -30,6 +30,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Fonts />
       <Component {...pageProps} />
+      
     </>
   )
 }
