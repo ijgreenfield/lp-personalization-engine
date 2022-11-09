@@ -5,6 +5,10 @@ body, html, * {
   box-sizing: border-box;
 }
 
+p, span {
+  font-family: 'Cadiz' !important;
+}
+
 .header {
   font-family: 'Tobias';
 }
