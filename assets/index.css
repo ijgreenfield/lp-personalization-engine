@@ -9,6 +9,10 @@ p, span {
   font-family: 'Cadiz' !important;
 }
 
+.header span {
+  font-family: 'Tobias' !important;
+}
+
 .header {
   font-family: 'Tobias';
 }
