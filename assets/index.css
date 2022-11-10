@@ -13,6 +13,11 @@ p, span {
   font-family: 'Tobias' !important;
 }
 
+.header span p {
+  font-family: 'Tobias' !important;
+  font-weight: 400 !important;
+}
+
 .header {
   font-family: 'Tobias';
 }
