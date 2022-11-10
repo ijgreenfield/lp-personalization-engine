@@ -14,7 +14,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
   useEffect(() => {
-    import('react-facebook-pixel')
+    setTimeout(() => {
+      import('react-facebook-pixel')
       .then((x) => x.default)
       .then((ReactPixel) => {
         ReactPixel.init('1026552650761735') // facebookPixelId
@@ -24,6 +25,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           ReactPixel.pageView()
         })
       })
+    }, 3000)
     }, [router.events])
 
   return (
