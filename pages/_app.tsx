@@ -32,7 +32,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Fonts />
       <Component {...pageProps} />
-      
+      <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB"></script>
     </>
   )
 }
