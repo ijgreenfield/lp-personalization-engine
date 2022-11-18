@@ -31,10 +31,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=UA-42488621-18"></Script>
+      <Script  src="https://www.googletagmanager.com/gtag/js?id=UA-42488621-18"></Script>
       <Script
       id='google-analytics'
-      strategy="afterInteractive"
       dangerouslySetInnerHTML={{
         __html: `
           window.dataLayer = window.dataLayer || [];
