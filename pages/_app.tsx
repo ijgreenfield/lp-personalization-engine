@@ -5,6 +5,7 @@ import '../assets/index.css'
 import Fonts from '@assets/styles/Fonts'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import Script from 'next/script'
 
 
 builder.init(builderConfig.apiKey)
@@ -30,6 +31,19 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=UA-42488621-18"></Script>
+      <Script
+      id='google-analytics'
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag(‘js’, new Date());
+          gtag(‘config’, ‘UA-42488621-18’);
+        `,
+        }}
+    />
       <Fonts />
       <Component {...pageProps} />
       <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB"></script>
