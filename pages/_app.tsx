@@ -6,6 +6,7 @@ import Fonts from '@assets/styles/Fonts'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { GoogleAnalytics } from "nextjs-google-analytics";
+import Layout from '@components/Layout'
 
 
 builder.init(builderConfig.apiKey)
@@ -31,10 +32,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <GoogleAnalytics trackPageViews />
-      <Fonts />
-      <Component {...pageProps} />
-      <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB"></script>
+      <Layout>
+        <GoogleAnalytics trackPageViews />
+        <Fonts />
+        <Component {...pageProps} />
+        <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UFdULB"></script>
+      </Layout>
     </>
   )
 }
